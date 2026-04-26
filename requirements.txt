@@ -1,0 +1,7 @@
+highrise-bot-sdk
+flask
+pytube
+ffmpeg
+ffmpeg-python
+youtube-search-python
+yt-dlp

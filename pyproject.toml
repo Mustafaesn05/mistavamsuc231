@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "python-template"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.12"
+highrise-bot-sdk = "24.1.0"
+flask = "^3.0.3"
+pytube = "^15.0.0"
+ffmpeg = "^1.4"
+youtube-search-python = "^1.6.6"
+yt-dlp = "^2025.1.26"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

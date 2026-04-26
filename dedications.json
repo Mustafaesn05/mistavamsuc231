@@ -1,0 +1,2737 @@
+{
+    "current": null,
+    "received": {
+        "atinatersbinen": [
+            {
+                "from": "Mistava",
+                "song": "Kubilay Karça - Ayaza Serdim",
+                "time": 1742130127.0042558
+            },
+            {
+                "from": "Mistava",
+                "song": "Arap Şükrü - Sigarayı Bıraktım (Official Audio)",
+                "time": 1742131707.4688532
+            },
+            {
+                "from": "Mistava",
+                "song": "Ezhel V Sansar Salvo - Gerçek Sandım",
+                "time": 1742137771.929697
+            },
+            {
+                "from": "Mistava",
+                "song": "Oğuz Yılmaz - Çekirge",
+                "time": 1742137973.3348656
+            },
+            {
+                "from": "Mistava",
+                "song": "Nerdeysen",
+                "time": 1742219064.000952
+            }
+        ],
+        "Mistava": [
+            {
+                "from": "atinatersbinen",
+                "song": "Stabil - O | Official Video",
+                "time": 1742130187.3067598
+            },
+            {
+                "from": "lPusKaS",
+                "song": "Sevemedim Karagözlüm",
+                "time": 1742132236.8672402
+            },
+            {
+                "from": "atinatersbinen",
+                "song": "kayra - hayırsız evlat [lyrics]",
+                "time": 1742133411.9172063
+            },
+            {
+                "from": "lPusKaS",
+                "song": "abdulkadir geylani (arapça ilahi )",
+                "time": 1742134789.1289558
+            },
+            {
+                "from": "lPusKaS",
+                "song": "Baneva - B!",
+                "time": 1742136317.3214235
+            },
+            {
+                "from": "souhaittie",
+                "song": "Ozan Ünsal - Geri Gelen Mektup",
+                "time": 1742169045.1354377
+            },
+            {
+                "from": "souhaittie",
+                "song": "Ozan Ünsal - Mutlak Seveceksin",
+                "time": 1742169658.475583
+            },
+            {
+                "from": "souhaittie",
+                "song": "Batu Akdeniz - Eksik",
+                "time": 1742201057.4769855
+            },
+            {
+                "from": "souhaittie",
+                "song": "Seksendört - Şimdi Hayat (Official Video)",
+                "time": 1742202243.8006992
+            },
+            {
+                "from": "souhaittie",
+                "song": "Sezen Aksu - Sarı Odalar (Official Video)",
+                "time": 1742203581.8283648
+            },
+            {
+                "from": "souhaittie",
+                "song": "Nilüfer - Son Arzum (Official Audio)",
+                "time": 1742218859.4789002
+            },
+            {
+                "from": "souhaittie",
+                "song": "Nerdeysen",
+                "time": 1742219077.3599465
+            },
+            {
+                "from": "souhaittie",
+                "song": "Anlamazdın",
+                "time": 1742219432.7856526
+            },
+            {
+                "from": "souhaittie",
+                "song": "Cennetim Sensin",
+                "time": 1742219597.670361
+            },
+            {
+                "from": "souhaittie",
+                "song": "Şebnem Ferah - Bırak Kadının Olayım (Kadın)",
+                "time": 1742326989.3909001
+            },
+            {
+                "from": "souhaittie",
+                "song": "Şehinşah - DÜNYA'DAN ATLAS'A (Prod by Ferzanbeats)",
+                "time": 1742404760.4561799
+            },
+            {
+                "from": "souhaittie",
+                "song": "Allame Acoustics - Hayalin Yeri Yok (Official Video)",
+                "time": 1742497725.521998
+            },
+            {
+                "from": "Tuana_432",
+                "song": "Şehinşah - Plüton (Produced by DJ Artz)",
+                "time": 1747475858.5690491
+            },
+            {
+                "from": "souhaittie",
+                "song": "Batuhan Kordel - Anıları Sakla (Official Video)",
+                "time": 1750446710.8694444
+            },
+            {
+                "from": "souhaittie",
+                "song": "Deeperise & Burak Akyol - Nida",
+                "time": 1750447471.670504
+            },
+            {
+                "from": "ninkasin",
+                "song": "Anıl Emre Daldal - M. (Official Lyric Video)",
+                "time": 1752568183.716373
+            },
+            {
+                "from": "ninkasin",
+                "song": "Allame Acoustics - Hayalin Yeri Yok (Official Video)",
+                "time": 1752569548.1515152
+            },
+            {
+                "from": "souhaittie",
+                "song": "Batuhan Kordel - Anıları Sakla (Official Video)",
+                "time": 1752650819.9699938
+            },
+            {
+                "from": "souhaittie",
+                "song": "Şehinşah - Plüton (Produced by DJ Artz)",
+                "time": 1752651935.4600947
+            },
+            {
+                "from": "ninkasin",
+                "song": "Sertab Erener - Olsun",
+                "time": 1753004239.2620208
+            },
+            {
+                "from": "souhaittie",
+                "song": "Ziynet Sali - Daha Nasıl Sevebilirim",
+                "time": 1753378820.1781363
+            },
+            {
+                "from": "F0xys",
+                "song": "Aleyna Tilki & Mabel Matiz - Kayboldum Masalında",
+                "time": 1775991337.5376234
+            }
+        ],
+        "Ilikethewayyoukissme": [
+            {
+                "from": "atinatersbinen",
+                "song": "Zerrin Özer - Son Mektup - (Official Video)",
+                "time": 1742130437.9095411
+            },
+            {
+                "from": "atinatersbinen",
+                "song": "Ezhel V Sansar Salvo - Gerçek Sandım",
+                "time": 1742137756.2210255
+            },
+            {
+                "from": "IDicle_",
+                "song": "O Şimdi Asker",
+                "time": 1747822311.6416385
+            },
+            {
+                "from": "Mistava",
+                "song": "маг",
+                "time": 1747902513.956425
+            }
+        ],
+        "millyqw": [
+            {
+                "from": "atinatersbinen",
+                "song": "Ais Ezhel - Rastafaray",
+                "time": 1742134980.8996081
+            }
+        ],
+        "lPusKaS": [
+            {
+                "from": "Mistava",
+                "song": "Baneva - B!",
+                "time": 1742136314.2038772
+            }
+        ],
+        "souhaittie": [
+            {
+                "from": "Mistava",
+                "song": "Müslüm Gürses - Kış Oldum",
+                "time": 1742161199.2158346
+            },
+            {
+                "from": "Mistava",
+                "song": "Ozan Ünsal - Geri Gelen Mektup",
+                "time": 1742169079.7158725
+            },
+            {
+                "from": "Mistava",
+                "song": "Ozan Ünsal - Mutlak Seveceksin",
+                "time": 1742169651.438022
+            },
+            {
+                "from": "swenae",
+                "song": "İsmail YK - Şekerim (Official Video)",
+                "time": 1742180066.8763232
+            },
+            {
+                "from": "Mistava",
+                "song": "Batu Akdeniz - Eksik",
+                "time": 1742201053.2774136
+            },
+            {
+                "from": "Mistava",
+                "song": "BLOK3 - UYUZ (Official Audio)",
+                "time": 1742201881.205181
+            },
+            {
+                "from": "Mistava",
+                "song": "Seksendört - Şimdi Hayat (Official Video)",
+                "time": 1742202237.5099611
+            },
+            {
+                "from": "Mistava",
+                "song": "Nilüfer - Son Arzum (Official Audio)",
+                "time": 1742218866.37405
+            },
+            {
+                "from": "Mistava",
+                "song": "Nerdeysen",
+                "time": 1742219067.6022584
+            },
+            {
+                "from": "Mistava",
+                "song": "Anlamazdın",
+                "time": 1742219482.3835335
+            },
+            {
+                "from": "Mistava",
+                "song": "Cennetim Sensin",
+                "time": 1742219586.604797
+            },
+            {
+                "from": "Mistava",
+                "song": "Ajda Pekkan - Dert Bende Derman Sende",
+                "time": 1742327282.2909174
+            },
+            {
+                "from": "Mistava",
+                "song": "Şehinşah - DÜNYA'DAN ATLAS'A (Prod by Ferzanbeats)",
+                "time": 1742404748.4151115
+            },
+            {
+                "from": "Mistava",
+                "song": "Allame Acoustics - Hayalin Yeri Yok (Official Video)",
+                "time": 1742497710.3857267
+            },
+            {
+                "from": "Mistava",
+                "song": "Onur Can Özcan - Hırka",
+                "time": 1750437906.09209
+            },
+            {
+                "from": "Mistava",
+                "song": "Pinhani ft. Kalben - İyi Değilim Ben (Yollar Bizi Bekler - 2019)",
+                "time": 1750442556.3738017
+            },
+            {
+                "from": "Mistava",
+                "song": "Rıza Tamer - Yan",
+                "time": 1750443209.9122097
+            },
+            {
+                "from": "Mistava",
+                "song": "Batuhan Kordel - Anıları Sakla (Official Video)",
+                "time": 1750446705.9004388
+            },
+            {
+                "from": "Mistava",
+                "song": "Deeperise & Burak Akyol - Nida",
+                "time": 1750447491.9785247
+            },
+            {
+                "from": "Mistava",
+                "song": "Batuhan Kordel - Anıları Sakla (Official Video)",
+                "time": 1752650827.5725238
+            },
+            {
+                "from": "Mistava",
+                "song": "Şehinşah - Plüton (Produced by DJ Artz)",
+                "time": 1752651925.6518824
+            },
+            {
+                "from": "ninkasin",
+                "song": "Anıl Emre Daldal - M. (Official Lyric Video)",
+                "time": 1752915921.8581445
+            },
+            {
+                "from": "Mistava",
+                "song": "Ziynet Sali - Daha Nasıl Sevebilirim",
+                "time": 1753378758.048809
+            },
+            {
+                "from": "mellkk_",
+                "song": "Kara Gözlü Çingenem",
+                "time": 1753737893.0895102
+            }
+        ],
+        "iIseong": [
+            {
+                "from": "OxYgeN18",
+                "song": "Dolu Kadehi Ters Tut - Islansın (Official Video)",
+                "time": 1742164666.8594456
+            }
+        ],
+        "U1YA": [
+            {
+                "from": "Alcapon.2",
+                "song": "Dolu Kadehi Ters Tut - Madem (Official Audio)",
+                "time": 1742167477.402787
+            }
+        ],
+        "swenae": [
+            {
+                "from": "souhaittie",
+                "song": "Dolu Kadehi Ters Tut - Dilerim Ki (Official Audio)",
+                "time": 1742178180.5728958
+            },
+            {
+                "from": "souhaittie",
+                "song": "Kahraman Deniz - Böyle Sever (Official Video)",
+                "time": 1742178938.5184903
+            },
+            {
+                "from": "souhaittie",
+                "song": "İsmail YK - Şekerim (Official Video)",
+                "time": 1742180091.0004616
+            },
+            {
+                "from": "souhaittie",
+                "song": "Dolu Kadehi Ters Tut - Madem (Official Audio)",
+                "time": 1742180782.341005
+            },
+            {
+                "from": "souhaittie",
+                "song": "Bengü - Saygımdan",
+                "time": 1742243479.7263112
+            },
+            {
+                "from": "souhaittie",
+                "song": "Yalın - Sonsuz Ol (Official Video)",
+                "time": 1742245018.8978238
+            },
+            {
+                "from": "souhaittie",
+                "song": "Batu Akdeniz - Eksik",
+                "time": 1742248775.230452
+            },
+            {
+                "from": "souhaittie",
+                "song": "Dolu Kadehi Ters Tut - Sana Bu Kadar Uzakken (Official Audio)",
+                "time": 1742303098.3447542
+            },
+            {
+                "from": "souhaittie",
+                "song": "Dolu Kadehi Ters Tut - Islansın (Official Video)",
+                "time": 1742316292.5799198
+            },
+            {
+                "from": "souhaittie",
+                "song": "Kumralım",
+                "time": 1742316696.145186
+            },
+            {
+                "from": "souhaittie",
+                "song": "Şebnem Ferah - Bırak Kadının Olayım (Kadın)",
+                "time": 1742326995.551529
+            },
+            {
+                "from": "souhaittie",
+                "song": "İlyas Yalçıntaş - İçimdeki Duman",
+                "time": 1742413333.7651904
+            },
+            {
+                "from": "sedat63",
+                "song": "Kargo - Yıldızların Altında (Official Video)",
+                "time": 1742431876.022369
+            }
+        ],
+        "TriggerWDq": [
+            {
+                "from": "souhaittie",
+                "song": "Kahraman Deniz - Böyle Sever (Official Video)",
+                "time": 1742178944.4372578
+            },
+            {
+                "from": "souhaittie",
+                "song": "Anlamazdın",
+                "time": 1742219512.5113778
+            }
+        ],
+        "sahraymisimmm": [
+            {
+                "from": "souhaittie",
+                "song": "Yalın - Ki Sen (Official Video)",
+                "time": 1742195001.4194536
+            }
+        ],
+        "cnm_askm": [
+            {
+                "from": "souhaittie",
+                "song": "figen genç 'nazende sevgilim' (Official Audıo)",
+                "time": 1742217939.0534792
+            },
+            {
+                "from": "souhaittie",
+                "song": "Nilüfer - Son Arzum (Official Audio)",
+                "time": 1742218854.3309047
+            },
+            {
+                "from": "souhaittie",
+                "song": "Nerdeysen",
+                "time": 1742219083.0164669
+            },
+            {
+                "from": "souhaittie",
+                "song": "Anlamazdın",
+                "time": 1742219501.4819477
+            },
+            {
+                "from": "souhaittie",
+                "song": "İmkansızım",
+                "time": 1742239372.3157542
+            },
+            {
+                "from": "souhaittie",
+                "song": "Ezhel - Ben",
+                "time": 1742242708.714356
+            },
+            {
+                "from": "souhaittie",
+                "song": "Bengü - Saygımdan",
+                "time": 1742243474.9760487
+            },
+            {
+                "from": "swenae",
+                "song": "Resul Dindar - Gümüşhane Kızları (Official Audio)",
+                "time": 1742310165.8379946
+            },
+            {
+                "from": "souhaittie",
+                "song": "Dolu Kadehi Ters Tut - Islansın (Official Video)",
+                "time": 1742316285.952877
+            },
+            {
+                "from": "souhaittie",
+                "song": "Kumralım",
+                "time": 1742316690.5635316
+            },
+            {
+                "from": "souhaittie",
+                "song": "Şebnem Ferah - Bırak Kadının Olayım (Kadın)",
+                "time": 1742326999.9210088
+            },
+            {
+                "from": "souhaittie",
+                "song": "Farzet",
+                "time": 1742327813.1845143
+            },
+            {
+                "from": "souhaittie",
+                "song": "Seda Tripkolic - Gözlerinin Yeşilini Özledim (Offical Video)",
+                "time": 1742390926.0275302
+            },
+            {
+                "from": "souhaittie",
+                "song": "Duman - Haberin Yok Ölüyorum",
+                "time": 1742411993.2996454
+            },
+            {
+                "from": "souhaittie",
+                "song": "İlyas Yalçıntaş - İçimdeki Duman",
+                "time": 1742413323.9309666
+            }
+        ],
+        "11.14.00": [
+            {
+                "from": "souhaittie",
+                "song": "Nilüfer - Son Arzum (Official Audio)",
+                "time": 1742218896.2310636
+            }
+        ],
+        "D.ig": [
+            {
+                "from": "Onl_1903",
+                "song": "Demet Akalın - Evli Mutlu Çocuklu",
+                "time": 1742244040.790344
+            }
+        ],
+        "BiancaR25": [
+            {
+                "from": "Melodiezz",
+                "song": "Semicenk - Batık Gemi",
+                "time": 1742245087.8940966
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Jakuzi - Koca Bir Saçmalık (Official Video)",
+                "time": 1742323632.8830438
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Koyu - Sen Benim Başıma Gelen En Güzel Şey (Official Lyric Video)",
+                "time": 1742324701.9482977
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Nilüfer - Son Arzum || sözleri (lyrics)",
+                "time": 1742411486.3729618
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Duman - Haberin Yok Ölüyorum",
+                "time": 1742411815.5196943
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Dolu Kadehi Ters Tut - Dilerim Ki (Official Audio)",
+                "time": 1742412811.4330328
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Şanışer Live Sessions - Aşk Şarkısı (w/Ayda)",
+                "time": 1742503558.7272794
+            }
+        ],
+        "Melodiezz": [
+            {
+                "from": "BiancaR25",
+                "song": "Semicenk - Batık Gemi",
+                "time": 1742245207.1245828
+            },
+            {
+                "from": "Nephthys_",
+                "song": "Emel Sayın - Duydum Ki Unutmuşsun",
+                "time": 1742251833.6345873
+            },
+            {
+                "from": "BiancaR25",
+                "song": "Koyu - Sen Benim Başıma Gelen En Güzel Şey (Official Lyric Video)",
+                "time": 1742324682.3348281
+            },
+            {
+                "from": "BiancaR25",
+                "song": "Nilüfer - Son Arzum || sözleri (lyrics)",
+                "time": 1742411453.3170433
+            },
+            {
+                "from": "BiancaR25",
+                "song": "Dolu Kadehi Ters Tut - Dilerim Ki (Official Audio)",
+                "time": 1742412811.5487816
+            },
+            {
+                "from": "BiancaR25",
+                "song": "Kıraç - 100. Yıl Şarkısı (Official Video)",
+                "time": 1742413797.78371
+            },
+            {
+                "from": "BiancaR25",
+                "song": "Şanışer Live Sessions - Aşk Şarkısı (w/Ayda)",
+                "time": 1742503564.7074728
+            }
+        ],
+        "pwrettiss": [
+            {
+                "from": "Shanatos",
+                "song": "Arctic Monkeys - I Wanna Be Yours",
+                "time": 1742300252.1083968
+            },
+            {
+                "from": "Shanatos",
+                "song": "Salih Yılmaz - Şelale",
+                "time": 1742318514.111289
+            }
+        ],
+        "rumeys_o.137": [
+            {
+                "from": "Omer0606",
+                "song": "Göksel - Gittiğinde (Official Video)",
+                "time": 1742309903.0542595
+            }
+        ],
+        "J1yann": [
+            {
+                "from": "ReiBruh",
+                "song": "CEZA - Med Cezir (Official Audio)",
+                "time": 1742321368.2706041
+            }
+        ],
+        "Nephthys_": [
+            {
+                "from": "Melodiezz",
+                "song": "Jakuzi - Koca Bir Saçmalık (Official Video)",
+                "time": 1742323638.5280848
+            }
+        ],
+        "Onl_1903": [
+            {
+                "from": "sahraymisimmm",
+                "song": "Müslüm Gürses - Sahte Dostlar",
+                "time": 1742406853.397648
+            }
+        ],
+        "KnoxWille": [
+            {
+                "from": "KriosX",
+                "song": "Bergen - Elimde Fotoğrafın",
+                "time": 1742418908.70276
+            },
+            {
+                "from": "Melodiezz",
+                "song": "Ceren Sagu - Günah",
+                "time": 1742421464.2208946
+            }
+        ],
+        "sedat63": [
+            {
+                "from": "swenae",
+                "song": "Kargo - Yıldızların Altında (Official Video)",
+                "time": 1742431848.1430092
+            }
+        ],
+        "kimbu_ceren": [
+            {
+                "from": "11.14.00",
+                "song": "Jeff Redd - SKTR GT 2.0 (feat. Era7Capone & Ati 242)",
+                "time": 1742495377.8958669
+            },
+            {
+                "from": "11.14.00",
+                "song": "İsmail YK - Kudur Baby (Official Video)",
+                "time": 1742497113.529396
+            }
+        ],
+        "Mislavina": [
+            {
+                "from": "Mistava",
+                "song": "Allame Acoustics - Hayalin Yeri Yok (Official Video)",
+                "time": 1742497702.8878574
+            }
+        ],
+        "elaavvioo_": [
+            {
+                "from": "11.14.00",
+                "song": "Emir Can İğrek – Nalan (Official Video)",
+                "time": 1742542912.8128052
+            }
+        ],
+        "Melancholyll": [
+            {
+                "from": "cerencake",
+                "song": "КАТЯ ЛЕЛЬ - Мой мармеладный (Official Audio)",
+                "time": 1743954399.3615708
+            }
+        ],
+        "youssefZX": [
+            {
+                "from": "Bat._Cat",
+                "song": "Wale - LoveHate Thing feat. Sam Dew [Official Music Video]",
+                "time": 1744072870.9315758
+            }
+        ],
+        "xkeIIs": [
+            {
+                "from": "EvilPie",
+                "song": "Greta Van Fleet - Anthem (Audio)",
+                "time": 1744098273.6409569
+            },
+            {
+                "from": "Atekinz",
+                "song": "Eurythmics, Annie Lennox, Dave Stewart - Here Comes The Rain Again (Remastered)",
+                "time": 1744151657.426976
+            }
+        ],
+        "byurslf.xo": [
+            {
+                "from": "Atekinz",
+                "song": "UB40 - Kingston Town (Official  Music Video)",
+                "time": 1744391099.5287342
+            }
+        ],
+        "ily.Tommy": [
+            {
+                "from": "Bat._Cat",
+                "song": "SZA - Kill Bill (Official Audio)",
+                "time": 1744396346.1775482
+            }
+        ],
+        "Vexxor": [
+            {
+                "from": "deepsu",
+                "song": "Serdar Ortaç Ft.Otilia - Balım",
+                "time": 1744554272.4573615
+            },
+            {
+                "from": "deepsu",
+                "song": "Serdar Ortaç Ft.Otilia - Balım",
+                "time": 1744580719.1448474
+            },
+            {
+                "from": "deepsu",
+                "song": "Ed Sheeran - Perfect (Official Music Video)",
+                "time": 1744583256.4767115
+            }
+        ],
+        "deepsu": [
+            {
+                "from": "Vexxor",
+                "song": "Lady Gaga, Bruno Mars - Die With A Smile (Official Audio)",
+                "time": 1744554852.0308702
+            },
+            {
+                "from": "Vexxor",
+                "song": "Serdar Ortaç Ft.Otilia - Balım",
+                "time": 1744580738.2281122
+            },
+            {
+                "from": "Vexxor",
+                "song": "Ed Sheeran - Perfect (Official Music Video)",
+                "time": 1744583276.2264774
+            }
+        ],
+        "Atekinz": [
+            {
+                "from": "Vyziva_",
+                "song": "Nicki Minaj - Starships (Explicit) (Official Video)",
+                "time": 1744649178.7563012
+            },
+            {
+                "from": "kavsak",
+                "song": "Sabrina Carpenter - Espresso (Official Video)",
+                "time": 1744651453.6084943
+            },
+            {
+                "from": "Vyziva_",
+                "song": "Áurea cósmica - Japanese Version",
+                "time": 1744651634.9381702
+            }
+        ],
+        "zinexx": [
+            {
+                "from": "Vyziva_",
+                "song": "JUL - Tchikita // [05] Album Gratuit Vol . 2 // 2016 ( Big up a Dj Babs )",
+                "time": 1744651361.3269696
+            },
+            {
+                "from": "Vyziva_",
+                "song": "Sabrina Carpenter - Espresso (Official Video)",
+                "time": 1744651510.5406408
+            },
+            {
+                "from": "Bat._Cat",
+                "song": "JUL - Tchikita // [05] Album Gratuit Vol . 2 // 2016 ( Big up a Dj Babs )",
+                "time": 1744655757.9405782
+            }
+        ],
+        "kavsak": [
+            {
+                "from": "Atekinz",
+                "song": "Sabrina Carpenter - Espresso (Official Video)",
+                "time": 1744651472.088804
+            },
+            {
+                "from": "Vyziva_",
+                "song": "Áurea cósmica - Japanese Version",
+                "time": 1744651654.5543225
+            }
+        ],
+        "Vyziva_": [
+            {
+                "from": "zinexx",
+                "song": "Sabrina Carpenter - Espresso (Official Video)",
+                "time": 1744651491.6136203
+            },
+            {
+                "from": "kavsak",
+                "song": "Áurea cósmica - Japanese Version",
+                "time": 1744651676.3604777
+            }
+        ],
+        "Dutchxz": [
+            {
+                "from": "Vyziva_",
+                "song": "Áurea cósmica - Japanese Version",
+                "time": 1744651672.4767375
+            }
+        ],
+        "cerencake": [
+            {
+                "from": "Vyziva_",
+                "song": "Áurea cósmica - Japanese Version",
+                "time": 1744651692.699577
+            }
+        ],
+        "ifmb": [
+            {
+                "from": "Vyziva_",
+                "song": "Áurea cósmica - Japanese Version",
+                "time": 1744651744.9460297
+            }
+        ],
+        "Viciaxx": [
+            {
+                "from": "Vyziva_",
+                "song": "Où ça ? (feat. Nej)",
+                "time": 1744651766.2126915
+            }
+        ],
+        "Bat._Cat": [
+            {
+                "from": "zinexx",
+                "song": "The Weeknd - Cry For Me (Official Music Video)",
+                "time": 1744655717.675347
+            }
+        ],
+        "Tuana_432": [
+            {
+                "from": "Mistava",
+                "song": "Şehinşah - Plüton (Produced by DJ Artz)",
+                "time": 1747475870.5241098
+            }
+        ],
+        "sjsjMelisa": [
+            {
+                "from": "r2wss",
+                "song": "Semicenk feat. Doğu Swag - Pişman Değilim (prod. by Büken)",
+                "time": 1747655298.2705529
+            }
+        ],
+        "IDicle_": [
+            {
+                "from": "Ducellion",
+                "song": "O Şimdi Asker",
+                "time": 1747822334.9671466
+            }
+        ],
+        "Mr.Battery": [
+            {
+                "from": "Mrs.Battery",
+                "song": "Celal Öz - Sana Çok Bağlıyam",
+                "time": 1747835161.148575
+            },
+            {
+                "from": "Mrs.Battery",
+                "song": "barmağına baktım yüzük görmedim, güzelim benimlen evlenir misin, bu şarkıyı sevgilinize gönderin",
+                "time": 1747835877.873701
+            }
+        ],
+        "IAthena._": [
+            {
+                "from": "IDicle_",
+                "song": "Kumralım",
+                "time": 1747838573.4478302
+            },
+            {
+                "from": "_ZEHRA_6",
+                "song": "Murat Dalkılıç ft Ezel - Neyleyim İstanbul'u - Slowed Reverb Rain - 2K FHD",
+                "time": 1747841030.4827483
+            }
+        ],
+        "tiffneff": [
+            {
+                "from": "IDicle_",
+                "song": "Ayşegül Aldinç - Durum Leyla (feat. Gökhan Türkmen)",
+                "time": 1747839359.4783962
+            }
+        ],
+        "Emirha7": [
+            {
+                "from": "kekocu",
+                "song": "Istanbul Trip - AVAVAV (Official Video)",
+                "time": 1747907985.6958046
+            }
+        ],
+        "AceDesuu": [
+            {
+                "from": "mellkk_",
+                "song": "Serdar Ortaç - Karabiberim (Official Video)",
+                "time": 1750437715.7449532
+            },
+            {
+                "from": "ninkasin",
+                "song": "Barış Manço - Ahmet Beyin Ceketi",
+                "time": 1751135866.1181526
+            },
+            {
+                "from": "SpeDesuu",
+                "song": "Son Feci Bisiklet - Rahatsız Vals",
+                "time": 1751136169.3690307
+            },
+            {
+                "from": "SpeDesuu",
+                "song": "Kıraç - Kan ve Gül (Official Video)",
+                "time": 1751136702.727364
+            },
+            {
+                "from": "ninkasin",
+                "song": "Kendimden Hallice & Barış Kocatürk - Soğuk Şarap (Official Video)",
+                "time": 1752444258.1463048
+            },
+            {
+                "from": "ninkasin",
+                "song": "Anıl Emre Daldal - M. (Official Lyric Video)",
+                "time": 1752915915.167016
+            },
+            {
+                "from": "ninkasin",
+                "song": "Sertab Erener - Olsun",
+                "time": 1753004252.5459814
+            },
+            {
+                "from": "ninkasin",
+                "song": "Yıldız Tilbe - Anma Arkadaş",
+                "time": 1753206189.996432
+            },
+            {
+                "from": "mellkk_",
+                "song": "Kara Gözlü Çingenem",
+                "time": 1753737898.179486
+            },
+            {
+                "from": "ninkasin",
+                "song": "Rota - Son Kez",
+                "time": 1754430212.649631
+            }
+        ],
+        "mellkk_": [
+            {
+                "from": "SpeDesuu",
+                "song": "Elmas Ft. İzmirli Deniz BENİM HERİF (2025 4k roman havası videoclip official)#spotify #tiktok #müzik",
+                "time": 1750439635.065342
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Tuğkan - Geber",
+                "time": 1750685310.8932507
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Vice - Deniz Kızı 2 (Sözleri)",
+                "time": 1752081413.051477
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Kahraman Deniz - Garezi Var (Official Audio)",
+                "time": 1752362177.6465216
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Kendimden Hallice & Barış Kocatürk - Soğuk Şarap (Official Video)",
+                "time": 1752444229.0223637
+            },
+            {
+                "from": "souhaittie",
+                "song": "Elyas & Taha - Gece Mavisi (Sözleri)",
+                "time": 1752613652.5835288
+            },
+            {
+                "from": "ninkasin",
+                "song": "Anıl Emre Daldal - M. (Official Lyric Video)",
+                "time": 1752915907.3920505
+            },
+            {
+                "from": "gwlbahr_",
+                "song": "Yaşar-Birtanem",
+                "time": 1753361769.3589876
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Müslüm Gürses - Bir Ömür Yetmez (Official Video)",
+                "time": 1754230175.7236955
+            }
+        ],
+        "berkekn1": [
+            {
+                "from": "kinder__pinguii",
+                "song": "ERA7CAPONE X POIZI - SONBAHAR (OFFICIAL MUSIC VIDEO)",
+                "time": 1750702936.53178
+            },
+            {
+                "from": "kinder__pinguii",
+                "song": "Semicenk - Sen Kaldın (prod. by Büken)",
+                "time": 1750760596.9727783
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Sena Şener - Teni Tenime (Official Audio)",
+                "time": 1750784571.2440054
+            },
+            {
+                "from": "kinder__pinguii",
+                "song": "Velet - Roman Olur Yazsam Seni (Official Video)",
+                "time": 1750788136.6635876
+            },
+            {
+                "from": "kinder__pinguii",
+                "song": "Hülya Polat - Koçari",
+                "time": 1750839139.4586482
+            }
+        ],
+        "feunx": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Noah Cyrus & XXXTENTACION - Again (Lyrics)",
+                "time": 1750705699.0640035
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Ayaz Aydın - Bir Sivaslı Uğruna (Official Video)",
+                "time": 1750705903.8049204
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Mark Eliyahu & Cem Adrian - Derinlerde",
+                "time": 1750706139.5178113
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "ERA7CAPONE - DURULDUM l PROD BY. KERO (Official Music Video)",
+                "time": 1751285275.1323254
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "TV Girl - Cigarettes out the Window (Lyrics)",
+                "time": 1751295685.963111
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "The Black Eyed Peas - Rock That Body (Official Music Video)",
+                "time": 1751363541.8750281
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Unreleased Song by Dj tls da zl ( Extended version by JudahEditz ) @Variant50",
+                "time": 1751365822.442258
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "CEMİL BABA- OBİR STAR -CANIMI YAKIYORSUN",
+                "time": 1751366291.3042934
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "POIZI & ERA7CAPONE - ÇIKAR BİRİ KARŞIMA I PROD BY. SNOW",
+                "time": 1751368383.1137388
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "İmkansızım",
+                "time": 1751368565.186235
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Kapatıyoruz - 3 (Verse)",
+                "time": 1751372427.9001133
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Noah Cyrus & XXXTENTACION - Again (Lyrics) | i wanna be your lover, i don't wanna be your friend",
+                "time": 1751637554.1056087
+            }
+        ],
+        "Soull_Mortall2": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Beanie (Slowed)",
+                "time": 1750752752.1544988
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "CEMİL BABA- OBİR STAR -CANIMI YAKIYORSUN",
+                "time": 1751366320.6298783
+            },
+            {
+                "from": "_skull_heart_",
+                "song": "Selena Gomez & The Scene - Love You Like A Love Song",
+                "time": 1751391900.310522
+            },
+            {
+                "from": "Just.Joke_",
+                "song": "Stray Kids \"TOPLINE (Feat. Tiger JK)\" Video",
+                "time": 1751527249.0834193
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Metehan Polat’a armağan (Özden Öksüz - Aziz Erol - Hasan Hüseyin Öksüz) Ceylan Gözlüm",
+                "time": 1751721459.8104982
+            }
+        ],
+        "lAxen._": [
+            {
+                "from": "09.10.23",
+                "song": "Dolu Kadehi Ters Tut - Dilerim Ki (Official Audio)",
+                "time": 1750773644.6409967
+            }
+        ],
+        "Mrs.sinwm": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Sena Şener - Teni Tenime (Official Audio)",
+                "time": 1750784602.933865
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Canozan - Ağlama ben ağlarım",
+                "time": 1751350293.0084174
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Derya Uluğ - Esmerin Adı Oya (Sarışınlar Çat)",
+                "time": 1751702434.5876598
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "You Love Me",
+                "time": 1752169515.3056717
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "LVBEL C5, AKDO - PEKİ PEKİ",
+                "time": 1752320772.910629
+            }
+        ],
+        "slmcnmnbr124": [
+            {
+                "from": "kinder__pinguii",
+                "song": "CİHAN SEREZ - ÇAT ÇAT ÇAT, ÇAT ÇAT ÇAT ÇAT (OFFICIAL VIDEO) feat OSİ BABA & SAKSAFONCU MURKİ",
+                "time": 1750787843.137048
+            },
+            {
+                "from": "Only_Gecem",
+                "song": "Hülya Polat - Koçari",
+                "time": 1752084423.9425287
+            },
+            {
+                "from": "OwnSake",
+                "song": "LVBEL C5, AKDO, ALIZADE - kAHpE",
+                "time": 1752249132.392372
+            }
+        ],
+        "N4meLess_": [
+            {
+                "from": "kekocu",
+                "song": "ERA7CAPONE X MURAT BOZ - ÜZÜLECEKSİN 2.0 I PROD BY. SNOW",
+                "time": 1750793271.5328124
+            }
+        ],
+        "kinder__pinguii": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Hayri Yaşar Karagülle - Kedi Yavrisi #karadenizşarkıları  #horon",
+                "time": 1750822074.233527
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "sen ayrı trende ben ayrı garda :))",
+                "time": 1750835399.6375954
+            },
+            {
+                "from": "berkekn1",
+                "song": "きゅびびびびずむ",
+                "time": 1750861196.376645
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "TV Girl - Cigarettes out the Window (Lyrics)",
+                "time": 1751295680.3671522
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Mary Jane- Tövbe (lyrics)",
+                "time": 1751360164.9678228
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Tarumar",
+                "time": 1751391066.5800998
+            },
+            {
+                "from": "_skull_heart_",
+                "song": "California Love (Original Version)",
+                "time": 1751391544.0221057
+            },
+            {
+                "from": "_skull_heart_",
+                "song": "Selena Gomez & The Scene - Love You Like A Love Song",
+                "time": 1751391885.669307
+            }
+        ],
+        "mhrmws": [
+            {
+                "from": "09.10.23",
+                "song": "Röya - Sənə Görə",
+                "time": 1750881022.5782552
+            },
+            {
+                "from": "nebakunla",
+                "song": "İmkansızım",
+                "time": 1751836639.1322148
+            },
+            {
+                "from": "nebakunla",
+                "song": "Olurem ay yetim 2013 Simral",
+                "time": 1751876241.996725
+            },
+            {
+                "from": "nebakunla",
+                "song": "#Vüsal Fəxri  #Orxan Dəniz  Ölürəm Ay Yetim",
+                "time": 1751883360.084727
+            },
+            {
+                "from": "mhrmws_",
+                "song": "LVBEL C5, AKDO, ALIZADE - kAHpE",
+                "time": 1751998029.7965586
+            },
+            {
+                "from": "safiya_57",
+                "song": "Uzeyir Mehdizade ft & Enya - Yadimdadir ( Official clip ) HD ( Yep Yeni 2014 )",
+                "time": 1752038958.0697517
+            },
+            {
+                "from": "havucumbenbb",
+                "song": "Yalın - Her Şey Sensin (Official Video)",
+                "time": 1752156565.9019303
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Talıb Tale & Zeynəb Həsəni - Səbr Elə (Akustik)",
+                "time": 1752171468.079958
+            },
+            {
+                "from": "havucumbenbb",
+                "song": "Funda Arar - Bağışla",
+                "time": 1752174507.6007223
+            },
+            {
+                "from": "havucumbenbb",
+                "song": "Sura İskəndərli  - Niye?  (Official Video)",
+                "time": 1752244864.5919104
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Eyyub Yaqubov - Bakılı Balası",
+                "time": 1752597397.2461123
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Kərim - Günahkar Mavi Xəzərdir (duet Mətanət Əbdülova) (Klip)",
+                "time": 1752770176.7414436
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Şebnem Ferah - Mayın Tarlası (Official Video)",
+                "time": 1752770525.2215786
+            },
+            {
+                "from": "mhrmws_",
+                "song": "HATICE AK UMUTLARIM HAYALLERİM LYRICS",
+                "time": 1752824788.9395676
+            },
+            {
+                "from": "09.10.23",
+                "song": "Funda Arar - Bağışla",
+                "time": 1752931731.6260343
+            },
+            {
+                "from": "09.10.23",
+                "song": "Miri Yusif — Bağışla (Rəsmi Audio)",
+                "time": 1752933638.0802143
+            },
+            {
+                "from": "09.10.23",
+                "song": "Ahmet Kaya - Şiire Gazele",
+                "time": 1753197349.3836834
+            }
+        ],
+        "lijkwade": [
+            {
+                "from": "kucukismail",
+                "song": "Rafat Hasanlı - Kısa Mesafe",
+                "time": 1750891241.212279
+            }
+        ],
+        "Aleyna_HR": [
+            {
+                "from": "cekirdekkola_",
+                "song": "Soner Avcu - Yeniden",
+                "time": 1751002376.96094
+            }
+        ],
+        "kewserrw": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Noah Cyrus & XXXTENTACION - Again (Lyrics)",
+                "time": 1751111662.342025
+            }
+        ],
+        "AngeloffDoom": [
+            {
+                "from": "lteru",
+                "song": "Red Leather - POISON (Lyric Video)",
+                "time": 1751115066.8968043
+            }
+        ],
+        "ninkasin": [
+            {
+                "from": "AceDesuu",
+                "song": "Barış Manço - Ahmet Beyin Ceketi",
+                "time": 1751135714.762016
+            },
+            {
+                "from": "SpeDesuu",
+                "song": "Son Feci Bisiklet - Rahatsız Vals",
+                "time": 1751136182.4154139
+            },
+            {
+                "from": "SpeDesuu",
+                "song": "Kıraç - Kan ve Gül (Official Video)",
+                "time": 1751136697.841852
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Tülay Özer - Büklüm Büklüm",
+                "time": 1752080466.875957
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Rota - İyi Uykular Peder",
+                "time": 1752080845.1496081
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Vice - Deniz Kızı 2 (Sözleri)",
+                "time": 1752081419.212107
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Kendimden Hallice & Barış Kocatürk - Soğuk Şarap (Official Video)",
+                "time": 1752444233.3013608
+            },
+            {
+                "from": "Mistava",
+                "song": "Anıl Emre Daldal - M. (Official Lyric Video)",
+                "time": 1752568192.8975222
+            }
+        ],
+        "SpeDesuu": [
+            {
+                "from": "ninkasin",
+                "song": "Barış Manço - Ahmet Beyin Ceketi",
+                "time": 1751135874.6745346
+            },
+            {
+                "from": "AceDesuu",
+                "song": "İkiye On Kala - Kafamda Kentsel Dönüşümler",
+                "time": 1751136037.567518
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Can Koç - Gökyüzünü Tutamam (Official Lyric Video)",
+                "time": 1752363428.5716903
+            },
+            {
+                "from": "mellkk_",
+                "song": "Kara Gözlü Çingenem",
+                "time": 1753737903.9493904
+            }
+        ],
+        "YuuVaydi_": [
+            {
+                "from": "ninkasin",
+                "song": "Barış Manço - Ahmet Beyin Ceketi",
+                "time": 1751135884.8479035
+            }
+        ],
+        "iremfg": [
+            {
+                "from": "talha3734",
+                "song": "ERA7CAPONE - DURULDUM l PROD BY. KERO (Official Music Video)",
+                "time": 1751285291.9840772
+            }
+        ],
+        "s1lop1_": [
+            {
+                "from": "ffrobin",
+                "song": "Cemil-Baba Obir star-  Kafayı Yedim",
+                "time": 1751330281.302298
+            }
+        ],
+        "_skull_heart_": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "POIZI & ERA7CAPONE - ÇIKAR BİRİ KARŞIMA I PROD BY. SNOW",
+                "time": 1751348489.3193831
+            },
+            {
+                "from": "kinder__pinguii",
+                "song": "California Love (Original Version)",
+                "time": 1751391545.5012321
+            },
+            {
+                "from": "Soull_Mortall2",
+                "song": "Palmiyeler - Aslında Alkol Hala Damarımda",
+                "time": 1751392055.6507974
+            }
+        ],
+        "vexanaaa": [
+            {
+                "from": "The_Caesar",
+                "song": "GOKO! - EVA&MIA (Official Video)",
+                "time": 1751358037.4623835
+            },
+            {
+                "from": "The_Caesar",
+                "song": "Mary Jane- Tövbe (lyrics)",
+                "time": 1751360198.200586
+            },
+            {
+                "from": "The_Caesar",
+                "song": "Ate - Diğer Yarım | Hamam Sessions",
+                "time": 1751360450.0370197
+            },
+            {
+                "from": "The_Caesar",
+                "song": "İmkansızım",
+                "time": 1751368502.9138064
+            },
+            {
+                "from": "The_Caesar",
+                "song": "Model - Mey",
+                "time": 1751568133.8761854
+            },
+            {
+                "from": "The_Caesar",
+                "song": "Yalın - Her Şey Sensin (Official Video)",
+                "time": 1751706992.904925
+            },
+            {
+                "from": "The_Caesar",
+                "song": "Yalın - Keyfi Yolunda Aşkı Sonunda (Official Klip)",
+                "time": 1751989334.6095288
+            },
+            {
+                "from": "Vioxy_",
+                "song": "ORGANIZE - GÖZLER YALAN SÖYLEMEZ [PROD. BY AKDO]",
+                "time": 1753346440.226667
+            },
+            {
+                "from": "Vioxy_",
+                "song": "Şanışer Live Sessions - Aşk Şarkısı (w/Ayda)",
+                "time": 1753346839.9965181
+            },
+            {
+                "from": "Vioxy_",
+                "song": "Rana Alagöz - Aşkın Gözü Körmü (Official Audio)",
+                "time": 1753347957.5870361
+            }
+        ],
+        "Mrs.sinwmiki": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "MıÇéCaN Ft NéßaHaT ''SéRSéRi'' 2012",
+                "time": 1751366074.767288
+            },
+            {
+                "from": "_skull_heart_",
+                "song": "Selena Gomez & The Scene - Love You Like A Love Song",
+                "time": 1751391925.2996511
+            }
+        ],
+        "zomqwx": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "İmkansızım",
+                "time": 1751368442.2132301
+            }
+        ],
+        "lanAcelya": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Dj Yılmaz | Antalya Gaydası |Official Music Video",
+                "time": 1751371673.0869324
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Helin - Bulamazsin (Official Lyric Video)",
+                "time": 1751448381.302975
+            },
+            {
+                "from": "Just.Joke_",
+                "song": "QURD — Rəqs edir hər kəs (official video)",
+                "time": 1751831324.8498228
+            },
+            {
+                "from": "Just.Joke_",
+                "song": "Resul Dindar - Gümüşhane Kızları (Official Audio)",
+                "time": 1751890004.5339978
+            },
+            {
+                "from": "ArroyoActin",
+                "song": "Şehinşah - Kapatıyoruz 3 (Sözleri)",
+                "time": 1763194549.8971567
+            }
+        ],
+        "lteru": [
+            {
+                "from": "AngeloffDoom",
+                "song": "girl in red - we fell in love in october",
+                "time": 1751395650.3398104
+            }
+        ],
+        "Star_Zuzu": [
+            {
+                "from": "C.A.S.I.O",
+                "song": "Aygün Kazımova - Yenə Tək (Official Music Video)",
+                "time": 1751472440.5114956
+            }
+        ],
+        "Amadeyim_emrine": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Ogiboyz - Psikoyz (Official Audio)",
+                "time": 1751485726.1468122
+            }
+        ],
+        "onlyy_usser": [
+            {
+                "from": "Soull_Mortall2",
+                "song": "YAP10 ft. Epi - Tək qalmışam",
+                "time": 1751495652.615981
+            }
+        ],
+        "Tek_Ravza": [
+            {
+                "from": "savas68",
+                "song": "Son Feci Bisiklet - Bikinisinde Astronomi",
+                "time": 1751530306.9992995
+            }
+        ],
+        "m1lest0n": [
+            {
+                "from": "yxrwn_",
+                "song": "No.1 - Koyu Siyah Feat. Doruk Ereşter (Official Video)",
+                "time": 1751565558.645397
+            }
+        ],
+        "Xkefo": [
+            {
+                "from": "_skull_heart_",
+                "song": "The Cardigans - Lovefool (Official Music Video)",
+                "time": 1751571654.2072363
+            },
+            {
+                "from": "_skull_heart_",
+                "song": "Bir Rüya Gördüm - Elif Doğan",
+                "time": 1751709242.171453
+            },
+            {
+                "from": "_skull_heart_",
+                "song": "Selena Gomez & The Scene - Love You Like A Love Song",
+                "time": 1751710991.9709115
+            }
+        ],
+        "Ankhores": [
+            {
+                "from": "ciwsauce",
+                "song": "ibrahim tatlıses - tabib sen elleme benim yaramı",
+                "time": 1751584434.5790184
+            }
+        ],
+        "rqzgr": [
+            {
+                "from": "jJudeau",
+                "song": "Queen – Bohemian Rhapsody (Official Video Remastered)",
+                "time": 1751589507.1230779
+            },
+            {
+                "from": "osqki",
+                "song": "Bonnet Hair Dryer 60mins \"Hair Dryer Sounds\" ASMR",
+                "time": 1752791582.9161649
+            },
+            {
+                "from": "Tripkolic",
+                "song": "İsyanlardayız Halil Sezai Mix - Bengü - Saat 3:00 x BLOK3 - Uyuz",
+                "time": 1752792755.249442
+            },
+            {
+                "from": "osqki",
+                "song": "10's (2016 Remaster)",
+                "time": 1754871041.3606505
+            }
+        ],
+        "oykuk2": [
+            {
+                "from": "No_namehelin",
+                "song": "Model - Mey",
+                "time": 1751623240.925277
+            }
+        ],
+        "safiya_57": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Noah Cyrus & XXXTENTACION - Again (Lyrics) | i wanna be your lover, i don't wanna be your friend",
+                "time": 1751637564.7380505
+            },
+            {
+                "from": "Just.Joke_",
+                "song": "Hülya Polat - Koçari",
+                "time": 1751888681.243736
+            },
+            {
+                "from": "Just.Joke_",
+                "song": "Resul Dindar - Gümüşhane Kızları (Official Audio)",
+                "time": 1751889866.4096184
+            }
+        ],
+        "Can_Arda": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "İrem - Hayalet Sevgilim (Official Audio)",
+                "time": 1751700065.0020008
+            },
+            {
+                "from": "Mrs.sinwm",
+                "song": "Yıldız Tilbe - Aşk Yok Olmaktır (Official Video)",
+                "time": 1752576369.044919
+            },
+            {
+                "from": "SunriseGlut",
+                "song": "Murat Kekilli - Bu Akşam Ölürüm (1999)",
+                "time": 1753523208.736253
+            }
+        ],
+        "evisll_": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "비비 (BIBI) - 나쁜년 (BIBI Vengeance) Official Performance Video",
+                "time": 1751702770.0936558
+            }
+        ],
+        "IWarlicia": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Okan & Volkan, Ahlat - Esmer",
+                "time": 1751728707.6265817
+            }
+        ],
+        "x_LUCIFER_xx": [
+            {
+                "from": "yapmaCANO",
+                "song": "Seda Yiyin & İpek Özdemir - Duysun Dağlar Duysun Taşlar / Kuzey Yıldızı İlk Aşk Jenerik Müziği Full",
+                "time": 1751750787.8584096
+            }
+        ],
+        "Dalinmiss": [
+            {
+                "from": "lavinyaym",
+                "song": "Yaşar - Divane",
+                "time": 1751759264.4827356
+            }
+        ],
+        "Ali_wq_": [
+            {
+                "from": "REDEliff",
+                "song": "Funda Arar - Bağışla",
+                "time": 1751884222.532607
+            }
+        ],
+        "_.RedRose._": [
+            {
+                "from": "Just.Joke_",
+                "song": "Zaur Quluzade - Nazli Melek (Official Music Video)",
+                "time": 1751887376.1901543
+            },
+            {
+                "from": "Ayla.tr",
+                "song": "Uzeyir Mehdizade  - Dost O Hemin Qiz Menim ( Official Audio 2009 )",
+                "time": 1753379094.9771934
+            }
+        ],
+        "Kaan.baba": [
+            {
+                "from": "KIWT_CAT",
+                "song": "Buray - Alaz Alaz",
+                "time": 1751915380.6024868
+            }
+        ],
+        "Always_me_": [
+            {
+                "from": "bir.damla.gozlerimde",
+                "song": "Pera Alcan - Danış Ondan 2024 (Official Music Video)",
+                "time": 1751918638.745733
+            }
+        ],
+        "sadece_biri143": [
+            {
+                "from": "safiya_57",
+                "song": "Uzeyir Mehdizade ft & Enya - Yadimdadir ( Official clip )  HD ( Yep Yeni 2014 )",
+                "time": 1751977536.0251694
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Sevda Yahyayeva — Həyatımın İlki (Rəsmi Musiqi Videosu)",
+                "time": 1753000436.016502
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Kargo - Yıldızların Altında (Official Video)",
+                "time": 1753001909.9679484
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Şehinşah ft. Bunt - Aşk Dediğin",
+                "time": 1753081990.8489878
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Röya – Влюблена (Rəsmi Musiqi Videosu)",
+                "time": 1753089840.4464283
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Sevda Yahyayeva — Həyatımın İlki (Rəsmi Musiqi Videosu)",
+                "time": 1753090349.4662516
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Samir Ilqarli ft Elvin ft Tural Seda Popuri *_*",
+                "time": 1753259652.723999
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Model - Mey",
+                "time": 1753260117.9073129
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Model - Değmesin Ellerimiz",
+                "time": 1753261907.021906
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Funda - Çaresizim",
+                "time": 1753265393.6307783
+            },
+            {
+                "from": "Ispeedonn",
+                "song": "Berk Baysal - Yaralarını Ben Sarayım ( Official Audio )",
+                "time": 1753283222.9152682
+            }
+        ],
+        "x_havva_x": [
+            {
+                "from": "Cemredundars",
+                "song": "Black Eyed Peas, Shakira - GIRL LIKE ME (Official Music Video)",
+                "time": 1751981416.7578847
+            }
+        ],
+        "Just.Joke_": [
+            {
+                "from": "Mrs.sinwmiki",
+                "song": "Criminal XL - Tennim 2021 ( Kürdish Trap ) KURDİSH DRİLL (Türkçe Altyazılı)",
+                "time": 1751983799.6165426
+            }
+        ],
+        "Liyanx_": [
+            {
+                "from": "Just.Joke_",
+                "song": "EWA",
+                "time": 1752003879.1339214
+            },
+            {
+                "from": "Just.Joke_",
+                "song": "Kadınım Kadın",
+                "time": 1752004654.396822
+            }
+        ],
+        "A._rghn": [
+            {
+                "from": "M4YW",
+                "song": "Uzeyir Mehdizade ft & Enya - Yadimdadir ( Official clip )  HD ( Yep Yeni 2014 )",
+                "time": 1752020713.0171554
+            }
+        ],
+        "Efffffe": [
+            {
+                "from": "demo_6186",
+                "song": "Koray Avcı - Unutamam Seni (Akustik)",
+                "time": 1752027055.7144
+            }
+        ],
+        "EmoSpider": [
+            {
+                "from": "The_Caesar",
+                "song": "GOKO! - EVA&MIA (Official Video)",
+                "time": 1752067807.733343
+            },
+            {
+                "from": "Vioxy_",
+                "song": "The Weeknd - Die For You",
+                "time": 1753972939.9735224
+            }
+        ],
+        "ONLYLL_YUSUF": [
+            {
+                "from": "mhrmws_",
+                "song": "Pullu dayim var - Eksklüziv Musiqi - 2019 Yeni Trend",
+                "time": 1752083329.275045
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Kərim - Günahkar Mavi Xəzərdir (duet Mətanət Əbdülova) (Klip)",
+                "time": 1752770313.780461
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Ehtiram Naxcivanli ft Turqut Naxcivanli Naxcivan Oglanlari 2015",
+                "time": 1752789129.8501318
+            }
+        ],
+        "Only_Gecem": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "Deeperise - Raf ft. Jabbar (Official Video)",
+                "time": 1752084342.7766178
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Hülya Polat - Koçari",
+                "time": 1752084403.8217
+            },
+            {
+                "from": "slmcnmnbr124",
+                "song": "Cakal & AKDO - Doyamadım ( Official Music Video )",
+                "time": 1752232638.271092
+            },
+            {
+                "from": "F0xys",
+                "song": "mor ve ötesi - Cambaz (Official Video)",
+                "time": 1776509928.2203245
+            }
+        ],
+        "Soft_Angelcik": [
+            {
+                "from": "Beyzz_A",
+                "song": "Mavi Gri - Dünyanın En Güzel Kızı (Lyrics Video)",
+                "time": 1752142458.2260804
+            }
+        ],
+        "havucumbenbb": [
+            {
+                "from": "mhrmws",
+                "song": "Avarayam men",
+                "time": 1752173111.9466133
+            }
+        ],
+        "leydicat_": [
+            {
+                "from": "ninkasin",
+                "song": "The Black Eyed Peas - Rock That Body (Official Music Video)",
+                "time": 1752228483.405596
+            },
+            {
+                "from": "kuwainokamis",
+                "song": "Adanmış Hayatların Umudu Şanlı Galatasaray",
+                "time": 1752273313.0067427
+            }
+        ],
+        "OwnSake": [
+            {
+                "from": "slmcnmnbr124",
+                "song": "LVBEL C5, AKDO, ALIZADE - kAHpE",
+                "time": 1752249116.8528454
+            }
+        ],
+        "kuwainokamis": [
+            {
+                "from": "leydicat_",
+                "song": "Angel (Remastered 2019)",
+                "time": 1752272913.4943624
+            }
+        ],
+        "Mr.fbii": [
+            {
+                "from": "TRK.Yusuf",
+                "song": "Funda Arar - Yak Gel (Official Video)",
+                "time": 1752297324.0487325
+            }
+        ],
+        "BatuKeko": [
+            {
+                "from": "kekocu",
+                "song": "Palmiyeler - Gel Yanıma (Official Music Video)",
+                "time": 1752332756.0709226
+            }
+        ],
+        "19_MZ": [
+            {
+                "from": "Just.Joke_",
+                "song": "Amina — Ölüm Haqdır (Rəsmi Musiqi Videosu)",
+                "time": 1752401088.5493956
+            }
+        ],
+        "BicakliPepe": [
+            {
+                "from": "ninkasin",
+                "song": "Çılgın Serkan - Kıyamıyorum Sana | Delivizyon",
+                "time": 1752442134.8239713
+            }
+        ],
+        "Zoey_001": [
+            {
+                "from": "AceDesuu",
+                "song": "Kendimden Hallice & Barış Kocatürk - Soğuk Şarap (Official Video)",
+                "time": 1752444240.2979589
+            },
+            {
+                "from": "mellkk_",
+                "song": "Elmas Ft. İzmirli Deniz BENİM HERİF (2025 4k roman havası videoclip official)#spotify #tiktok #müzik",
+                "time": 1754079818.556974
+            }
+        ],
+        "09.10.23": [
+            {
+                "from": "ZENCIKOSAVUNMADERNEGI",
+                "song": "Okan & Volkan, Ahlat - Esmer",
+                "time": 1752495331.2709112
+            },
+            {
+                "from": "lAxen._",
+                "song": "Emre Aydın feat. Model - Bir Pazar Kahvaltısı",
+                "time": 1753138642.629241
+            },
+            {
+                "from": "mhrmws",
+                "song": "Ahmet Kaya - Şiire Gazele",
+                "time": 1753197329.0253513
+            },
+            {
+                "from": "mhrmws",
+                "song": "Pepee / Bebee - Kalbim Kırıldı - Çocuk Şarkıları | Düşyeri",
+                "time": 1753204705.494094
+            }
+        ],
+        "fatime_000": [
+            {
+                "from": "EmooZhT1",
+                "song": "Mr.Sero x Hazu Romaniei - Cok Güsel",
+                "time": 1752496273.3421862
+            }
+        ],
+        "semayskk": [
+            {
+                "from": "B1RAKT1_",
+                "song": "Billie Eilish - Happier Than Ever (Official Music Video)",
+                "time": 1752591472.0568814
+            }
+        ],
+        "Serkan2348": [
+            {
+                "from": "B1RAKT1_",
+                "song": "Chris Grey - LET THE WORLD BURN (Official Lyric Video)",
+                "time": 1752594864.7928267
+            }
+        ],
+        "Wprx": [
+            {
+                "from": "Tripkolic",
+                "song": "Uyu",
+                "time": 1752662068.416822
+            },
+            {
+                "from": "Tripkolic",
+                "song": "Davut Güloğlu - Katula Katula",
+                "time": 1752688821.9472594
+            },
+            {
+                "from": "Tripkolic",
+                "song": "Kibariye - Hap Koydum (Official Audio)",
+                "time": 1752747605.5646834
+            }
+        ],
+        "osqki": [
+            {
+                "from": "Tripkolic",
+                "song": "Nirvana - Where Did You Sleep Last Night (Live On MTV Unplugged Unedited)",
+                "time": 1752688948.5241303
+            },
+            {
+                "from": "Tripkolic",
+                "song": "Bonnet Hair Dryer 60mins \"Hair Dryer Sounds\" ASMR",
+                "time": 1752791511.8682437
+            },
+            {
+                "from": "duruqwu",
+                "song": "Solitude",
+                "time": 1754317388.5309427
+            },
+            {
+                "from": "rqzgr",
+                "song": "10's (2016 Remaster)",
+                "time": 1754871050.159988
+            }
+        ],
+        "tgbiya": [
+            {
+                "from": "Kkenma__",
+                "song": "Duman - Eski Köprünün Altında",
+                "time": 1752696882.4766302
+            }
+        ],
+        "Kkenma__": [
+            {
+                "from": "luvzz_nzyeonn",
+                "song": "BLOODY STREAM",
+                "time": 1752701866.7693577
+            }
+        ],
+        "Setriis": [
+            {
+                "from": "Tripkolic",
+                "song": "Dönsen Bile",
+                "time": 1752757305.6368122
+            }
+        ],
+        "Carterers": [
+            {
+                "from": "Nilnehriii",
+                "song": "Erol Evgin & Emel Sayın - İşte Öyle Bir Şey (Official Audio)",
+                "time": 1752762068.8055093
+            },
+            {
+                "from": "Nilnehriii",
+                "song": "Cem Adrian & Hande Mehan - Sen Benim Şarkılarımsın (Official Audio)",
+                "time": 1752763997.1698813
+            }
+        ],
+        "Nilnehriii": [
+            {
+                "from": "Carterers",
+                "song": "Erol Evgin & Emel Sayın - İşte Öyle Bir Şey (Official Audio)",
+                "time": 1752762083.0939302
+            },
+            {
+                "from": "Carterers",
+                "song": "Müslüm Gürses - Seni Yazdım",
+                "time": 1752763722.5186784
+            },
+            {
+                "from": "Carterers",
+                "song": "Cem Adrian & Hande Mehan - Sen Benim Şarkılarımsın (Official Audio)",
+                "time": 1752764007.4244764
+            }
+        ],
+        "Alisa_sadie": [
+            {
+                "from": "ONLYLL_YUSUF",
+                "song": "Şekersiz - İmkansız Bir Aşk Denir (Sözleri)",
+                "time": 1752781922.754596
+            },
+            {
+                "from": "ONLYLL_YUSUF",
+                "song": "Ezhel - Ağla (Official Audio)",
+                "time": 1752825803.9000363
+            },
+            {
+                "from": "HegemonyMane",
+                "song": "Yalın - Halbuki",
+                "time": 1753348430.4102607
+            }
+        ],
+        "Tripkolic": [
+            {
+                "from": "osqki",
+                "song": "Bonnet Hair Dryer 60mins \"Hair Dryer Sounds\" ASMR",
+                "time": 1752791548.2449658
+            }
+        ],
+        "duruqwu": [
+            {
+                "from": "osqki",
+                "song": "Bonnet Hair Dryer 60mins \"Hair Dryer Sounds\" ASMR",
+                "time": 1752791577.6975038
+            },
+            {
+                "from": "osqki",
+                "song": "Candlemass - Bewitched",
+                "time": 1754316419.019796
+            },
+            {
+                "from": "osqki",
+                "song": "Solitude",
+                "time": 1754317391.5146334
+            }
+        ],
+        "naz_isteyaw": [
+            {
+                "from": "Dogu12",
+                "song": "Remembrance (Official Music Video)",
+                "time": 1752880965.1761613
+            }
+        ],
+        "User02392739": [
+            {
+                "from": "balliturtaa_",
+                "song": "Şehinşah & DJ Artz - Ihtan // Groovypedia Studio Sessions",
+                "time": 1752909785.30583
+            }
+        ],
+        "Zehrayws": [
+            {
+                "from": "mhrmws_",
+                "song": "Kazim Can - Aşiq Olmusan (2023)",
+                "time": 1752953299.135804
+            },
+            {
+                "from": "mhrmws_",
+                "song": "Kərim - Günahkar Mavi Xəzərdir (duet Mətanət Əbdülova) (Klip)",
+                "time": 1753390780.4616992
+            }
+        ],
+        "Ispeedonn": [
+            {
+                "from": "sadece_biri143",
+                "song": "Noah Cyrus & XXXTENTACION - Again (Lyrics)",
+                "time": 1753001099.7173064
+            }
+        ],
+        "ilyniss": [
+            {
+                "from": "nova.ll",
+                "song": "Mitski - I Don't Smoke (Official Audio)",
+                "time": 1753032503.9833667
+            }
+        ],
+        "_Azra1_": [
+            {
+                "from": "nova.ll",
+                "song": "Anıl Emre Daldal - B. (Official Video)",
+                "time": 1753056412.2961617
+            }
+        ],
+        "mialuis_": [
+            {
+                "from": "alwysname",
+                "song": "İlyas Yalçıntaş - İçimdeki Duman",
+                "time": 1753306266.5509021
+            }
+        ],
+        "Iswaijn": [
+            {
+                "from": "IPuskas",
+                "song": "Karsu - Jest Oldu",
+                "time": 1753310572.306902
+            }
+        ],
+        "lBelisarius": [
+            {
+                "from": "Iswaijn",
+                "song": "Karsu - Jest Oldu",
+                "time": 1753310600.7364967
+            }
+        ],
+        "Vioxy_": [
+            {
+                "from": "vexanaaa",
+                "song": "Yalın - Halbuki",
+                "time": 1753348434.7271585
+            }
+        ],
+        "Dusangel": [
+            {
+                "from": "Ayla.tr",
+                "song": "Funda Arar - Bağışla",
+                "time": 1753351510.4325447
+            }
+        ],
+        "taekook95971": [
+            {
+                "from": "jk_taehyun1g",
+                "song": "Meddle About",
+                "time": 1753359144.754758
+            }
+        ],
+        "Ayla.tr": [
+            {
+                "from": "_.RedRose._",
+                "song": "Uzeyir Mehdizade  - Dost O Hemin Qiz Menim ( Official Audio 2009 )",
+                "time": 1753379158.8078027
+            }
+        ],
+        "cerrossu": [
+            {
+                "from": "AptalSufle",
+                "song": "mind's eye - WISHING FOR ME (official lyric video)",
+                "time": 1753402294.6689634
+            }
+        ],
+        "YaqmurBK": [
+            {
+                "from": "Ilikethewayyoukissme",
+                "song": "Çok Yaşlıyım",
+                "time": 1753746231.3101563
+            }
+        ],
+        "I.Traxy": [
+            {
+                "from": "ninkasin",
+                "song": "Ersay Üner - Selam",
+                "time": 1753982005.9548032
+            },
+            {
+                "from": "ninkasin",
+                "song": "Turan Şahin - Horonun Ortasında ✔️",
+                "time": 1753984007.8586092
+            }
+        ],
+        "vozoI": [
+            {
+                "from": "Ilikethewayyoukissme",
+                "song": "Can Ozan - Toprak Yağmura",
+                "time": 1754032636.90696
+            },
+            {
+                "from": "Ilikethewayyoukissme",
+                "song": "Artemas - i like the way you kiss me (official music video)",
+                "time": 1754033049.050845
+            }
+        ],
+        "IiItjay": [
+            {
+                "from": "vozoI",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754064582.5301306
+            },
+            {
+                "from": "basbakan",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754216263.3535025
+            },
+            {
+                "from": "basbakan",
+                "song": "Birîndar Kürd Oğluyum",
+                "time": 1754216620.279055
+            },
+            {
+                "from": "basbakan",
+                "song": "Deha Archived - THC VAPE | (Official Audio)",
+                "time": 1754341072.8070426
+            }
+        ],
+        "Lilyumudo": [
+            {
+                "from": "vozoI",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754064613.6979547
+            }
+        ],
+        "inactiveIy": [
+            {
+                "from": "vozoI",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754072283.9074755
+            },
+            {
+                "from": "IiItjay",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754243124.9138105
+            },
+            {
+                "from": "IiItjay",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754392380.3525639
+            }
+        ],
+        "basbakan": [
+            {
+                "from": "vozoI",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754072671.7513802
+            },
+            {
+                "from": "IiItjay",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754216245.6809735
+            },
+            {
+                "from": "IiItjay",
+                "song": "Birîndar Kürd Oğluyum",
+                "time": 1754216626.4151165
+            },
+            {
+                "from": "IiItjay",
+                "song": "Ece - Moral ( Official Video )",
+                "time": 1754341226.0052273
+            }
+        ],
+        "iBeby": [
+            {
+                "from": "ceggg",
+                "song": "Gerizekalı Sevgilim Benim - Mustafa Topaloğlu (Official Video)",
+                "time": 1754123990.3086169
+            }
+        ],
+        "ceggg": [
+            {
+                "from": "iBeby",
+                "song": "Pepee / Bebee - Kalbim Kırıldı - Çocuk Şarkıları | Düşyeri",
+                "time": 1754124072.80781
+            }
+        ],
+        "qvlls": [
+            {
+                "from": "AceDesuu",
+                "song": "Müslüm Gürses - Bir Ömür Yetmez (Official Video)",
+                "time": 1754230145.9281702
+            },
+            {
+                "from": "AceDesuu",
+                "song": "Sezen Aksu - Geri Dön (Official Audio)",
+                "time": 1754230666.5953562
+            }
+        ],
+        "cibekk": [
+            {
+                "from": "cwggy",
+                "song": "Volkan Konak -Aleni Aleni(Manolya-2015)",
+                "time": 1754253358.2173624
+            },
+            {
+                "from": "cwggy",
+                "song": "Wicked Game",
+                "time": 1754254416.747559
+            },
+            {
+                "from": "cwggy",
+                "song": "Lovesong",
+                "time": 1754255169.938878
+            },
+            {
+                "from": "cwggy",
+                "song": "Mustafa Ceceli - Sevgilim",
+                "time": 1754256856.4316027
+            },
+            {
+                "from": "cwggy",
+                "song": "Okan & Volkan - Halden Anlamaz",
+                "time": 1754324659.4041522
+            },
+            {
+                "from": "cwggy",
+                "song": "Burak Bulut - Cano",
+                "time": 1754325254.8780947
+            }
+        ],
+        "cwggy": [
+            {
+                "from": "cibekk",
+                "song": "Mustafa Ceceli - Sevgilim",
+                "time": 1754256844.4807043
+            }
+        ],
+        "Asterace": [
+            {
+                "from": "ninkasin",
+                "song": "Rota - Son Kez",
+                "time": 1754430223.3288527
+            }
+        ],
+        "elixry": [
+            {
+                "from": "ninkasin",
+                "song": "Rota - Son Kez",
+                "time": 1754430277.3706527
+            }
+        ],
+        "Alone_06": [
+            {
+                "from": "ben_isil",
+                "song": "Funda - Çaresizim",
+                "time": 1754465395.093749
+            }
+        ],
+        "My_Demon_10": [
+            {
+                "from": "mhrmws",
+                "song": "Samir Ilqarli  Qaytar Ureyimi 2013",
+                "time": 1754474083.0399806
+            },
+            {
+                "from": "mhrmws",
+                "song": "Avarayam men",
+                "time": 1754639342.416549
+            }
+        ],
+        "PierreVanHooijdong": [
+            {
+                "from": "anyvvay",
+                "song": "Şebnem Ferah - Bu Aşk Fazla Sana",
+                "time": 1754602275.8346705
+            }
+        ],
+        "yuwjiq": [
+            {
+                "from": "EmoSpider",
+                "song": "PERA - Aşk Koydum Adını",
+                "time": 1755594474.5577624
+            }
+        ],
+        "sisnurr": [
+            {
+                "from": "CatherineZetaJ",
+                "song": "Cry - Cigarettes After Sex",
+                "time": 1755643258.3766193
+            }
+        ],
+        "CatherineZetaJ": [
+            {
+                "from": "sisnurr",
+                "song": "Cry - Cigarettes After Sex",
+                "time": 1755643379.6607518
+            }
+        ],
+        "kedaix": [
+            {
+                "from": "theduckinthebuck",
+                "song": "On Sight",
+                "time": 1757209155.148674
+            }
+        ],
+        "incilaa": [
+            {
+                "from": "GangFrancesco",
+                "song": "Yaşlı Amca - Yakamoz Güzeli",
+                "time": 1763247434.4516912
+            }
+        ],
+        "lLai_": [
+            {
+                "from": "DenizSeraa",
+                "song": "Yalın - Küçücüğüm (Official Video)",
+                "time": 1763596507.1433437
+            }
+        ],
+        "swenchia": [
+            {
+                "from": "irmwqk",
+                "song": "Bak",
+                "time": 1763663397.0503988
+            }
+        ],
+        "SaviorAnge_l": [
+            {
+                "from": "HA1EL",
+                "song": "Seyfi Yalçınses ft Uygar Doğanay Islak Sokak 2021 (oficcial audio)",
+                "time": 1763739685.1066525
+            }
+        ],
+        "HA1EL": [
+            {
+                "from": "SaviorAnge_l",
+                "song": "Seyfi Yalçınses ft Uygar Doğanay Islak Sokak 2021 (oficcial audio)",
+                "time": 1763739714.604673
+            }
+        ],
+        "sava30": [
+            {
+                "from": "GangFrancesco",
+                "song": "Genç Fenerbahceliler | Galatasaray-fenerbahçe | Küfürlü Tezahürat Fenerbahçe S...A...",
+                "time": 1764371724.0916193
+            }
+        ],
+        "JqWXc": [
+            {
+                "from": "R8ean",
+                "song": "Tokio Hotel - Schrei",
+                "time": 1775976580.4306738
+            }
+        ],
+        "F0xys": [
+            {
+                "from": "IKairo",
+                "song": "Aleyna Tilki & Mabel Matiz - Kayboldum Masalında",
+                "time": 1775991264.8723044
+            },
+            {
+                "from": "IKairo",
+                "song": "Aklımda Biri Var",
+                "time": 1776888235.103265
+            }
+        ],
+        "IKairo": [
+            {
+                "from": "F0xys",
+                "song": "Uğur Şimşek Zilli Arvat & Damda Duran Zincir Kıran 2022 Tiktok ' u Sallayan Oyun Havası 2022🧿🧿🧿🧿",
+                "time": 1776027597.5261064
+            },
+            {
+                "from": "F0xys",
+                "song": "Son Feci Bisiklet - Bu Kız",
+                "time": 1776421781.3276272
+            },
+            {
+                "from": "F0xys",
+                "song": "Uğur Şimşek Zilli Arvat & Damda Duran Zincir Kıran 2022 Tiktok ' u Sallayan Oyun Havası 2022🧿🧿🧿🧿",
+                "time": 1776512625.6017659
+            },
+            {
+                "from": "F0xys",
+                "song": "Uğur Şimşek Zilli Arvat & Damda Duran Zincir Kıran 2022 Tiktok ' u Sallayan Oyun Havası 2022🧿🧿🧿🧿",
+                "time": 1776694250.1554883
+            },
+            {
+                "from": "F0xys",
+                "song": "Uğur Şimşek Zilli Arvat & Damda Duran Zincir Kıran 2022 Tiktok ' u Sallayan Oyun Havası 2022🧿🧿🧿🧿",
+                "time": 1777111405.8897347
+            }
+        ],
+        "N__NAZZ__N": [
+            {
+                "from": "Wegh_Rumiii",
+                "song": "sun is up 2",
+                "time": 1776070575.861005
+            },
+            {
+                "from": "xceyceyy",
+                "song": "Yalın - Her Şey Sensin (Official Video)",
+                "time": 1777137376.3849473
+            }
+        ],
+        "gecefani": [
+            {
+                "from": "F0xys",
+                "song": "Calvin Harris & Disciples - How Deep Is Your Love",
+                "time": 1776104077.9752214
+            }
+        ],
+        "nyxare": [
+            {
+                "from": "F0xys",
+                "song": "Alex Sparrow- She's Crazy But She's Mine (Lyrics Video)",
+                "time": 1776110736.9060118
+            },
+            {
+                "from": "F0xys",
+                "song": "G-Eazy & Halsey - Him & I (Lyrics)",
+                "time": 1776165361.6100745
+            }
+        ],
+        "IMielly": [
+            {
+                "from": "F0xys",
+                "song": "Alex Sparrow- She's Crazy But She's Mine (Lyrics Video)",
+                "time": 1776110742.7231684
+            },
+            {
+                "from": "F0xys",
+                "song": "TUANA - cümlelerim (Music Video)",
+                "time": 1776203931.2022736
+            },
+            {
+                "from": "F0xys",
+                "song": "Eyedress & Dent May - Something About You",
+                "time": 1776425406.5666997
+            },
+            {
+                "from": "F0xys",
+                "song": "mor ve ötesi - Cambaz (Official Video)",
+                "time": 1776509932.631876
+            }
+        ],
+        "KAWASAKJ": [
+            {
+                "from": "D0GU",
+                "song": "Wegh - Geri Ver (Official Music Video)",
+                "time": 1776164007.181969
+            }
+        ],
+        "_._PEAK_._": [
+            {
+                "from": "F0xys",
+                "song": "Eyedress & Dent May - Something About You",
+                "time": 1776425415.0786579
+            }
+        ],
+        "fyxii_": [
+            {
+                "from": "Contana_",
+                "song": "Aygün Kazımova - Yenə Tək (Official Music Video)",
+                "time": 1776544499.5401874
+            },
+            {
+                "from": "Contana_",
+                "song": "Batuhan Kordel - Sıcak Şarap",
+                "time": 1776692483.3653505
+            },
+            {
+                "from": "Contana_",
+                "song": "Mia & Sebastian’s Theme",
+                "time": 1776698747.9701924
+            },
+            {
+                "from": "Contana_",
+                "song": "yirmi7 - Sokak Lambası",
+                "time": 1776781499.0396214
+            },
+            {
+                "from": "Contana_",
+                "song": "Batuhan Kordel - Sıcak Şarap",
+                "time": 1776800386.1176903
+            },
+            {
+                "from": "Contana_",
+                "song": "Cem Adrian - Ben Seni Çok Sevdim (Official Audio)",
+                "time": 1776881781.9491982
+            },
+            {
+                "from": "Contana_",
+                "song": "Nasıl Derler Bilirsin - Tertemiz Delirdim",
+                "time": 1776951915.4635873
+            },
+            {
+                "from": "Contana_",
+                "song": "Mavi Gri - Dünyanın En Güzel Kızı (Lyrics Video)",
+                "time": 1776976215.6881034
+            },
+            {
+                "from": "Contana_",
+                "song": "mor ve ötesi - Deli (Official Video)",
+                "time": 1777048896.6507003
+            },
+            {
+                "from": "Contana_",
+                "song": "girl in red - we fell in love in october",
+                "time": 1777108176.2644553
+            },
+            {
+                "from": "Contana_",
+                "song": "Aklımda Biri Var",
+                "time": 1777110504.6270406
+            }
+        ],
+        "seksikaplumbag": [
+            {
+                "from": "D0GU",
+                "song": "Sleigh Ride (Indian Christmas Remix)",
+                "time": 1776550420.5915027
+            }
+        ],
+        "elflela13loki": [
+            {
+                "from": "Snz39_x",
+                "song": "MARSS - OLAYLAR (OFFICIAL AUDIO) #VENOM",
+                "time": 1776583738.8186731
+            },
+            {
+                "from": "Snz39_x",
+                "song": "AQTAII \"Herkesim\"",
+                "time": 1776929269.6016512
+            }
+        ],
+        "lmiea": [
+            {
+                "from": "yapmaCANO",
+                "song": "Sezen Aksu - Aşktan Ne Haber (Official Audio)",
+                "time": 1776618893.5343704
+            }
+        ],
+        "Contana_": [
+            {
+                "from": "fyxii_",
+                "song": "RECEP TAYYİP ERDOĞAN ARAPÇA ŞARKI",
+                "time": 1776693721.7211838
+            },
+            {
+                "from": "fyxii_",
+                "song": "Kiss - I Was Made For Lovin' You",
+                "time": 1776974872.9676182
+            },
+            {
+                "from": "fyxii_",
+                "song": "Yüzyüzeyken Konuşuruz - Kaş II",
+                "time": 1777046076.1783805
+            }
+        ],
+        "Snz39_x": [
+            {
+                "from": "elflela13loki",
+                "song": "Måneskin - BABY SAID (Lyric Video)",
+                "time": 1776929317.9823544
+            }
+        ],
+        "13kiIIoki": [
+            {
+                "from": "Zehramingg",
+                "song": "Nancy Ajram - Enta Eih (Official Music Video) / نانسي عجرم - انت ايه",
+                "time": 1777194676.8139243
+            }
+        ],
+        "Ilovisa": [
+            {
+                "from": "Zehramingg",
+                "song": "Kum & Sansar Salvo - Kırmızı Reçete (Official Music Video)",
+                "time": 1777201674.4869237
+            }
+        ]
+    },
+    "song_gifts": {},
+    "current_song_gifts": {}
+}
