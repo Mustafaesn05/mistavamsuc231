@@ -61,6 +61,8 @@ class MyBot(BaseBot):
         self.should_stop = False
         self.searching_users = set()  # Şarkı arayan kullanıcıları takip etmek için
         self.dance_running = False
+        self.upgrading_users = set()  # -up komutu için race condition koruması
+        self.user_shop_state = {}  # Shop menü durumu (race koruması ile)
 
         from emotes_data import load_current_emote
         self.current_emote = load_current_emote()
@@ -183,7 +185,6 @@ class MyBot(BaseBot):
         # Bilgilendirme mesaj döngüsünü başlat
         async def info_message_loop():
             messages = [
-                "⚠️ Üzgünüz! Teknik bir hata nedeniyle ⭐ favoriler, 🪙 coinler ve 🎁 hediyeler sıfırlandı. Telafi için çalışıyoruz. Anlayışınız için teşekkürler 💖",
                 "ℹ️ Komutları görmek için `-help` yazabilirsiniz. Tüm komutların listesi biyografimde mevcuttur.",
                 "🎵 Şarkı açmak için `-p şarkıadı` yazabilirsiniz. Örnek: -p Tarkan Kuzu Kuzu",
                 "💰 Her 10 dakikada bir otomatik olarak 10 coin kazanabilirsiniz!",
@@ -211,7 +212,7 @@ class MyBot(BaseBot):
                     message_index = (message_index + 1) % len(messages)
                 except Exception as e:
                     print(f"Error in info message loop: {e}")
-                await asyncio.sleep(45)  # Her 45 saniyede bir mesaj gönder
+                await asyncio.sleep(30)  # Her 30 saniyede bir 1 mesaj gönder
 
         # WebSocket bağlantı sağlığını kontrol etme döngüsü
         async def connection_health_check():
@@ -1294,59 +1295,86 @@ class MyBot(BaseBot):
                 await self.highrise.send_whisper(user.id, f"❌ {message_text}")
             return
 
-        elif message.startswith("-up"):
-            from points_manager import use_points, get_user_points
+        elif message == "-up" or message.startswith("-up "):
+            from points_manager import use_points, get_user_points, add_points
 
-            # Kullanıcının şarkılarını bul
-            user_songs = [(i, song) for i, song in enumerate(self.queue) if song[3] == user.username]
-
-            if not user_songs:
-                await self.highrise.send_whisper(user.id, "❌ Sırada bir şarkınız yok!")
+            # Race condition koruması: aynı kullanıcının -up komutu eş zamanlı işlenmesin
+            if not hasattr(self, 'upgrading_users'):
+                self.upgrading_users = set()
+            if user.username in self.upgrading_users:
+                await self.highrise.send_whisper(user.id, "⏳ Önceki -up işleminiz hala işleniyor, lütfen bekleyin...")
                 return
+            self.upgrading_users.add(user.username)
 
-            # Tek şarkısı varsa ilk şarkıyı al, birden fazla şarkı varsa uyarı ver
-            if len(user_songs) == 1:
-                index, song = user_songs[0]
-            elif message.strip() == "-up":
-                await self.highrise.send_whisper(user.id, f"❌ Birden fazla şarkınız var! Doğru kullanım: -up <şarkı numarası>")
-                await self.highrise.send_whisper(user.id, "🎵 Şarkılarınız:")
-                for i, (_, song) in enumerate(user_songs):
-                    await self.highrise.send_whisper(user.id, f"{i+1}. {song[1]}")
-                return
-            else:
-                try:
-                    # -up komutundan sonraki sayıyı al
-                    song_number = int(message.split()[1]) - 1
-                    if 0 <= song_number < len(user_songs):
-                        index, song = user_songs[song_number]
-                    else:
-                        await self.highrise.send_whisper(user.id, f"❌ Geçersiz şarkı numarası!")
-                        await self.highrise.send_whisper(user.id, "🎵 Şarkılarınız:")
-                        for i, (_, song) in enumerate(user_songs):
-                            await self.highrise.send_whisper(user.id, f"{i+1}. {song[1]}")
-                        return
-                except (IndexError, ValueError):
-                    await self.highrise.send_whisper(user.id, f"❌ Lütfen bir şarkı numarası girin:")
+            try:
+                # Kullanıcının şarkılarını bul
+                user_songs = [(i, song) for i, song in enumerate(self.queue) if song[3] == user.username]
+
+                if not user_songs:
+                    await self.highrise.send_whisper(user.id, "❌ Sırada bir şarkınız yok!")
+                    return
+
+                # Tek şarkısı varsa ilk şarkıyı al, birden fazla şarkı varsa uyarı ver
+                if len(user_songs) == 1:
+                    index, song = user_songs[0]
+                elif message.strip() == "-up":
+                    await self.highrise.send_whisper(user.id, f"❌ Birden fazla şarkınız var! Doğru kullanım: -up <şarkı numarası>")
                     await self.highrise.send_whisper(user.id, "🎵 Şarkılarınız:")
                     for i, (_, song) in enumerate(user_songs):
                         await self.highrise.send_whisper(user.id, f"{i+1}. {song[1]}")
                     return
-
-            if index == 0:
-                await self.highrise.send_whisper(user.id, "❌ Şarkınız zaten sıranın en üstünde!")
-                return
-
-            if get_user_points(user.username) >= 100:
-                if use_points(user.username, 100):
-                    # Şarkıyı bir üst sıraya taşı
-                    self.queue[index], self.queue[index-1] = self.queue[index-1], self.queue[index]
-                    from queue_manager import save_queue
-                    save_queue(self.queue)
-                    await self.highrise.send_whisper(user.id, f"⬆️ '{song[1]}' bir sıra yukarı taşındı! (Yeni konum: {index})")
                 else:
-                    await self.highrise.send_whisper(user.id, "❌ Bir hata oluştu!")
-            else:
-                await self.highrise.send_whisper(user.id, "❌ Yetersiz puan! (Gerekli: 100)")
+                    try:
+                        # -up komutundan sonraki sayıyı al
+                        song_number = int(message.split()[1]) - 1
+                        if 0 <= song_number < len(user_songs):
+                            index, song = user_songs[song_number]
+                        else:
+                            await self.highrise.send_whisper(user.id, f"❌ Geçersiz şarkı numarası!")
+                            await self.highrise.send_whisper(user.id, "🎵 Şarkılarınız:")
+                            for i, (_, song) in enumerate(user_songs):
+                                await self.highrise.send_whisper(user.id, f"{i+1}. {song[1]}")
+                            return
+                    except (IndexError, ValueError):
+                        await self.highrise.send_whisper(user.id, f"❌ Lütfen bir şarkı numarası girin:")
+                        await self.highrise.send_whisper(user.id, "🎵 Şarkılarınız:")
+                        for i, (_, song) in enumerate(user_songs):
+                            await self.highrise.send_whisper(user.id, f"{i+1}. {song[1]}")
+                        return
+
+                if index == 0:
+                    await self.highrise.send_whisper(user.id, "❌ Şarkınız zaten sıranın en üstünde!")
+                    return
+
+                if get_user_points(user.username) < 100:
+                    await self.highrise.send_whisper(user.id, "❌ Yetersiz puan! (Gerekli: 100)")
+                    return
+
+                # Coin'i atomik şekilde düş
+                if not use_points(user.username, 100):
+                    await self.highrise.send_whisper(user.id, "❌ Yetersiz puan! (Gerekli: 100)")
+                    return
+
+                # Coin düştükten sonra şarkının güncel pozisyonunu tekrar bul
+                song_url = song[0]
+                current_index = next(
+                    (i for i, q in enumerate(self.queue) if q[0] == song_url and q[3] == user.username),
+                    None
+                )
+
+                if current_index is None or current_index == 0:
+                    # Şarkı artık sırada değil ya da zaten en üstte → coin'i iade et
+                    add_points(user.username, 100)
+                    await self.highrise.send_whisper(user.id, "❌ Şarkı artık sırada değil veya zaten en üstte. Coin iade edildi.")
+                    return
+
+                # Şarkıyı bir üst sıraya taşı
+                self.queue[current_index], self.queue[current_index-1] = self.queue[current_index-1], self.queue[current_index]
+                from queue_manager import save_queue
+                save_queue(self.queue)
+                await self.highrise.send_whisper(user.id, f"⬆️ '{song[1]}' bir sıra yukarı taşındı! (Yeni konum: {current_index})")
+            finally:
+                self.upgrading_users.discard(user.username)
 
         elif message.startswith("-dance") and self.is_admin(user.username):
             from emotes_data import paid_emotes
@@ -1725,245 +1753,265 @@ class MyBot(BaseBot):
                     shop_state = self.user_shop_state[user_id]
 
                     if shop_state.get('in_shop', False):
-                        if shop_state.get('menu') == 'main':
-                            # Ana menüden seçim
-                            if message == "1":
-                                # Coin menüsü
-                                from wallet_manager import get_gold
-                                from points_manager import get_user_points
+                        # Race condition koruması: aynı kullanıcı için aynı anda birden fazla shop işlemi işlenmesin
+                        if shop_state.get('processing', False):
+                            return
+                        self.user_shop_state[user_id]['processing'] = True
+                        try:
+                            if shop_state.get('menu') == 'main':
+                                # Ana menüden seçim
+                                if message == "1":
+                                    # Coin menüsü
+                                    from wallet_manager import get_gold
+                                    from points_manager import get_user_points
 
-                                gold_balance = get_gold(username)
-                                coin_balance = get_user_points(username)
+                                    gold_balance = get_gold(username)
+                                    coin_balance = get_user_points(username)
 
-                                coin_menu = (
-                                    f"💰 COIN MENÜSÜ 💰\n\n"
-                                    f"💎 Gold Bakiyeniz: {gold_balance}\n"
-                                    f"💰 Coin Bakiyeniz: {coin_balance}\n\n"
-                                    f"1️⃣ 100 Coin = 10 Gold\n"
-                                    f"2️⃣ 200 Coin = 20 Gold\n"
-                                    f"3️⃣ 300 Coin = 30 Gold\n"
-                                    f"4️⃣ 400 Coin = 40 Gold\n"
-                                    f"5️⃣ 500 Coin = 50 Gold\n"
-                                    f"6️⃣ 1000 Coin = 90 Gold\n\n"
-                                    f"0️⃣ Ana Menüye Dön\n"
-                                    f"❌ Çıkış\n\n"
-                                    f"Seçim yapmak için sayı yazın"
-                                )
+                                    coin_menu = (
+                                        f"💰 COIN MENÜSÜ 💰\n\n"
+                                        f"💎 Gold Bakiyeniz: {gold_balance}\n"
+                                        f"💰 Coin Bakiyeniz: {coin_balance}\n\n"
+                                        f"1️⃣ 100 Coin = 10 Gold\n"
+                                        f"2️⃣ 200 Coin = 20 Gold\n"
+                                        f"3️⃣ 300 Coin = 30 Gold\n"
+                                        f"4️⃣ 400 Coin = 40 Gold\n"
+                                        f"5️⃣ 500 Coin = 50 Gold\n"
+                                        f"6️⃣ 1000 Coin = 90 Gold\n\n"
+                                        f"0️⃣ Ana Menüye Dön\n"
+                                        f"❌ Çıkış\n\n"
+                                        f"Seçim yapmak için sayı yazın"
+                                    )
 
-                                await self.highrise.send_message(conversation_id, coin_menu)
-                                self.user_shop_state[user_id]['menu'] = 'coin'
-                                return
-
-                            elif message == "2":
-                                # VIP Menüsü
-                                from wallet_manager import get_gold
-                                from temp_vip_manager import get_temp_vip_info
-
-                                gold_balance = get_gold(username)
-                                temp_vip_info = get_temp_vip_info(username)
-
-                                vip_status = ""
-                                if temp_vip_info:
-                                    vip_status = f"\n🌟 Mevcut VIP: Kademe {temp_vip_info['level']} ({temp_vip_info['days_left']} gün kaldı)"
-
-                                vip_menu = (
-                                    f"✨ VIP MENÜSÜ ✨\n\n"
-                                    f"💎 Gold Bakiyeniz: {gold_balance}{vip_status}\n\n"
-                                    f"1️⃣ Kademe 1 VIP ⭐ = 200 Gold (30 gün)\n"
-                                    f"   • Sıraya 2 şarkı ekleme\n\n"
-                                    f"2️⃣ Kademe 2 VIP 🌟 = 350 Gold (30 gün)\n"
-                                    f"   • Sıraya 2 şarkı ekleme\n"
-                                    f"   • Günlük 2 -top komutu hakkı (şarkını sıranın başına taşı)\n"
-                                    f"   • Günlük bonus +50 coin\n\n"
-                                    f"3️⃣ Kademe 3 VIP 💎 = 500 Gold (30 gün)\n"
-                                    f"   • Sıraya 2 şarkı ekleme\n"
-                                    f"   • Günlük 3 -top komutu hakkı (şarkını sıranın başına taşı)\n"
-                                    f"   • Günlük bonus +100 coin\n\n"
-                                    f"0️⃣ Ana Menüye Dön\n"
-                                    f"❌ Çıkış\n\n"
-                                    f"Seçim yapmak için sayı yazın"
-                                )
-
-                                await self.highrise.send_message(conversation_id, vip_menu)
-                                self.user_shop_state[user_id]['menu'] = 'vip'
-                                return
-
-                            elif message in ["3", "4"]:
-                                await self.highrise.send_message(conversation_id, "🚧 Bu menü henüz mevcut değil. Yakında eklenecek!")
-                                return
-
-                            elif message.lower() in ["❌", "exit", "çıkış"]:
-                                del self.user_shop_state[user_id]
-                                await self.highrise.send_message(conversation_id, "👋 Shop'tan çıkıldı!")
-                                return
-
-                        elif shop_state.get('menu') == 'coin':
-                            # Coin menüsünden seçim
-                            coin_packages = {
-                                "1": {"coins": 100, "gold": 10},
-                                "2": {"coins": 200, "gold": 20},
-                                "3": {"coins": 300, "gold": 30},
-                                "4": {"coins": 400, "gold": 40},
-                                "5": {"coins": 500, "gold": 50},
-                                "6": {"coins": 1000, "gold": 90}
-                            }
-
-                            if message in coin_packages:
-                                package = coin_packages[message]
-                                coins_to_buy = package["coins"]
-                                gold_cost = package["gold"]
-
-                                from wallet_manager import get_gold, use_gold
-                                from points_manager import get_user_points, add_points
-
-                                # İşlem sırasında iki kez gold kontrolü yap
-                                current_gold = get_gold(username)
-
-                                if current_gold >= gold_cost:
-                                    # Gold'u düş
-                                    if use_gold(username, gold_cost):
-                                        # Coin ekleme işlemi
-                                        if add_points(username, coins_to_buy):
-                                            new_gold = get_gold(username)
-                                            new_coins = get_user_points(username)
-
-                                            success_msg = (
-                                                f"✅ Satın alma başarılı!\n\n"
-                                                f"🛒 {coins_to_buy} Coin aldınız\n"
-                                                f"💎 {gold_cost} Gold ödendi\n\n"
-                                                f"💎 Yeni Gold Bakiyeniz: {new_gold}\n"
-                                                f"💰 Yeni Coin Bakiyeniz: {new_coins}"
-                                            )
-                                            await self.highrise.send_message(conversation_id, success_msg)
-
-                                            # Satın alımdan sonra otomatik çıkış
-                                            del self.user_shop_state[user_id]
-                                            await self.highrise.send_message(conversation_id, "🛒 Shop'tan otomatik olarak çıkıldı! Yeniden -shop yazarak menüye erişebilirsiniz.")
-                                        else:
-                                            # Coin ekleme başarısızsa gold'u geri ver
-                                            from wallet_manager import add_gold
-                                            add_gold(username, gold_cost)
-                                            await self.highrise.send_message(conversation_id, "❌ Coin ekleme sırasında hata oluştu! Gold iadesi yapıldı.")
-                                    else:
-                                        await self.highrise.send_message(conversation_id, "❌ Gold düşme işlemi başarısız oldu!")
-                                else:
-                                    await self.highrise.send_message(conversation_id, f"❌ Yetersiz Gold! Gerekli: {gold_cost} Gold, Mevcut: {current_gold} Gold")
-                                return
-
-                            elif message == "0":
-                                # Ana menüye dön
-                                from wallet_manager import get_gold
-                                from points_manager import get_user_points
-
-                                gold_balance = get_gold(username)
-                                coin_balance = get_user_points(username)
-
-                                shop_menu = (
-                                    f"🏪 SHOP MENÜSÜ 🏪\n\n"
-                                    f"💰 Coin Bakiyeniz: {coin_balance}\n"
-                                    f"💎 Gold Bakiyeniz: {gold_balance}\n\n"
-                                    f"1️⃣ Coin Menüsü\n"
-                                    f"2️⃣ VIP Menüsü ✨\n"
-                                    f"3️⃣ Yakında...\n"
-                                    f"4️⃣ Yakında...\n\n"
-                                    f"Seçim yapmak için sayı yazın (1-4)"
-                                )
-
-                                await self.highrise.send_message(conversation_id, shop_menu)
-                                self.user_shop_state[user_id]['menu'] = 'main'
-                                return
-
-                            elif message.lower() in ["❌", "exit", "çıkış"]:
-                                del self.user_shop_state[user_id]
-                                await self.highrise.send_message(conversation_id, "👋 Shop'tan çıkıldı!")
-                                return
-
-                        elif shop_state.get('menu') == 'vip':
-                            # VIP menüsünden seçim
-                            vip_packages = {
-                                "1": {"level": 1, "gold": 200, "days": 30},
-                                "2": {"level": 2, "gold": 350, "days": 30},
-                                "3": {"level": 3, "gold": 500, "days": 30}
-                            }
-
-                            if message in vip_packages:
-                                package = vip_packages[message]
-                                vip_level = package["level"]
-                                gold_cost = package["gold"]
-                                vip_days = package["days"]
-
-                                # Mevcut VIP kontrolü
-                                from temp_vip_manager import get_temp_vip_info
-                                existing_vip = get_temp_vip_info(username)
-
-                                if existing_vip:
-                                    await self.highrise.send_message(conversation_id, f"❌ Zaten aktif VIP'iniz var!\n\n⭐ Mevcut VIP Kademe: {existing_vip['level']}\n📅 Kalan Süre: {existing_vip['days_left']} gün\n🗓️ Bitiş Tarihi: {existing_vip['expiry_date']}\n\nMevcut VIP'iniz bittikten sonra yeni VIP alabilirsiniz.")
+                                    await self.highrise.send_message(conversation_id, coin_menu)
+                                    if user_id in self.user_shop_state:
+                                        self.user_shop_state[user_id]['menu'] = 'coin'
                                     return
 
-                                from wallet_manager import get_gold, use_gold
-                                from temp_vip_manager import add_temp_vip
+                                elif message == "2":
+                                    # VIP Menüsü
+                                    from wallet_manager import get_gold
+                                    from temp_vip_manager import get_temp_vip_info
 
-                                current_gold = get_gold(username)
+                                    gold_balance = get_gold(username)
+                                    temp_vip_info = get_temp_vip_info(username)
 
-                                if current_gold >= gold_cost:
-                                    # Gold'u düş ve VIP ekle
-                                    if use_gold(username, gold_cost):
-                                        add_temp_vip(username, vip_level, vip_days)
+                                    vip_status = ""
+                                    if temp_vip_info:
+                                        vip_status = f"\n🌟 Mevcut VIP: Kademe {temp_vip_info['level']} ({temp_vip_info['days_left']} gün kaldı)"
 
-                                        new_gold = get_gold(username)
-                                        from temp_vip_manager import get_temp_vip_info
-                                        temp_vip_info = get_temp_vip_info(username)
-                                        vip_status = f"Kademe {temp_vip_info['level']} ({temp_vip_info['days_left']} gün kaldı)" if temp_vip_info else "Yok"
+                                    vip_menu = (
+                                        f"✨ VIP MENÜSÜ ✨\n\n"
+                                        f"💎 Gold Bakiyeniz: {gold_balance}{vip_status}\n\n"
+                                        f"1️⃣ Kademe 1 VIP ⭐ = 200 Gold (30 gün)\n"
+                                        f"   • Sıraya 2 şarkı ekleme\n\n"
+                                        f"2️⃣ Kademe 2 VIP 🌟 = 350 Gold (30 gün)\n"
+                                        f"   • Sıraya 2 şarkı ekleme\n"
+                                        f"   • Günlük 2 -top komutu hakkı (şarkını sıranın başına taşı)\n"
+                                        f"   • Günlük bonus +50 coin\n\n"
+                                        f"3️⃣ Kademe 3 VIP 💎 = 500 Gold (30 gün)\n"
+                                        f"   • Sıraya 2 şarkı ekleme\n"
+                                        f"   • Günlük 3 -top komutu hakkı (şarkını sıranın başına taşı)\n"
+                                        f"   • Günlük bonus +100 coin\n\n"
+                                        f"0️⃣ Ana Menüye Dön\n"
+                                        f"❌ Çıkış\n\n"
+                                        f"Seçim yapmak için sayı yazın"
+                                    )
 
-                                        success_msg = (
-                                            f"✅ Satın alma başarılı!\n\n"
-                                            f"✨ VIP Kademe {vip_level} alındı ({vip_days} gün)\n"
-                                            f"💎 {gold_cost} Gold ödendi\n\n"
-                                            f"💎 Yeni Gold Bakiyeniz: {new_gold}\n"
-                                            f"🌟 VIP Statünüz: {vip_status}"
-                                        )
-                                        await self.highrise.send_message(conversation_id, success_msg)
+                                    await self.highrise.send_message(conversation_id, vip_menu)
+                                    if user_id in self.user_shop_state:
+                                        self.user_shop_state[user_id]['menu'] = 'vip'
+                                    return
 
-                                        # Satın alımdan sonra otomatik çıkış
-                                        del self.user_shop_state[user_id]
-                                        await self.highrise.send_message(conversation_id, "🛒 Shop'tan otomatik olarak çıkıldı! Yeniden -shop yazarak menüye erişebilirsiniz.")
-                                    else:
-                                        await self.highrise.send_message(conversation_id, "❌ Satın alma sırasında bir hata oluştu!")
-                                else:
-                                    await self.highrise.send_message(conversation_id, f"❌ Yetersiz Gold! Gerekli: {gold_cost} Gold, Mevcut: {current_gold} Gold")
-                                return
+                                elif message in ["3", "4"]:
+                                    await self.highrise.send_message(conversation_id, "🚧 Bu menü henüz mevcut değil. Yakında eklenecek!")
+                                    return
 
-                            elif message == "0":
-                                # Ana menüye dön
-                                from wallet_manager import get_gold
-                                from points_manager import get_user_points
+                                elif message.lower() in ["❌", "exit", "çıkış"]:
+                                    self.user_shop_state.pop(user_id, None)
+                                    await self.highrise.send_message(conversation_id, "👋 Shop'tan çıkıldı!")
+                                    return
 
-                                gold_balance = get_gold(username)
-                                coin_balance = get_user_points(username)
+                            elif shop_state.get('menu') == 'coin':
+                                # Coin menüsünden seçim
+                                coin_packages = {
+                                    "1": {"coins": 100, "gold": 10},
+                                    "2": {"coins": 200, "gold": 20},
+                                    "3": {"coins": 300, "gold": 30},
+                                    "4": {"coins": 400, "gold": 40},
+                                    "5": {"coins": 500, "gold": 50},
+                                    "6": {"coins": 1000, "gold": 90}
+                                }
 
-                                shop_menu = (
-                                    f"🏪 SHOP MENÜSÜ 🏪\n\n"
-                                    f"💰 Coin Bakiyeniz: {coin_balance}\n"
-                                    f"💎 Gold Bakiyeniz: {gold_balance}\n\n"
-                                    f"1️⃣ Coin Menüsü\n"
-                                    f"2️⃣ VIP Menüsü ✨\n"
-                                    f"3️⃣ Yakında...\n"
-                                    f"4️⃣ Yakında...\n\n"
-                                    f"Seçim yapmak için sayı yazın (1-4)"
-                                )
+                                if message in coin_packages:
+                                    package = coin_packages[message]
+                                    coins_to_buy = package["coins"]
+                                    gold_cost = package["gold"]
 
-                                await self.highrise.send_message(conversation_id, shop_menu)
-                                self.user_shop_state[user_id]['menu'] = 'main'
-                                return
+                                    from wallet_manager import get_gold, use_gold, add_gold
+                                    from points_manager import get_user_points, add_points
 
-                            elif message.lower() in ["❌", "exit", "çıkış"]:
-                                del self.user_shop_state[user_id]
-                                await self.highrise.send_message(conversation_id, "👋 Shop'tan çıkıldı!")
-                                return
+                                    # Atomik gold düşürme: gold yetmiyorsa use_gold False döner
+                                    if not use_gold(username, gold_cost):
+                                        current_gold = get_gold(username)
+                                        await self.highrise.send_message(conversation_id, f"❌ Yetersiz Gold! Gerekli: {gold_cost} Gold, Mevcut: {current_gold} Gold")
+                                        return
 
-                        # Geçersiz seçim
-                        await self.highrise.send_message(conversation_id, "❌ Geçersiz seçim! Lütfen menüdeki sayıları kullanın.")
-                        return
+                                    # Gold düşürüldü, şimdi coin ekle
+                                    if not add_points(username, coins_to_buy):
+                                        # Coin eklenemedi → gold'u iade et (en fazla 3 deneme)
+                                        refunded = False
+                                        for _ in range(3):
+                                            if add_gold(username, gold_cost):
+                                                refunded = True
+                                                break
+                                        if refunded:
+                                            await self.highrise.send_message(conversation_id, "❌ Coin ekleme sırasında hata oluştu! Gold iadesi yapıldı.")
+                                        else:
+                                            print(f"CRITICAL: Coin add failed AND gold refund failed for {username} ({gold_cost} gold lost)")
+                                            await self.highrise.send_message(conversation_id, "❌ Sistem hatası! Lütfen yöneticiye başvurun.")
+                                        return
+
+                                    # Başarılı satın alma
+                                    new_gold = get_gold(username)
+                                    new_coins = get_user_points(username)
+
+                                    success_msg = (
+                                        f"✅ Satın alma başarılı!\n\n"
+                                        f"🛒 {coins_to_buy} Coin aldınız\n"
+                                        f"💎 {gold_cost} Gold ödendi\n\n"
+                                        f"💎 Yeni Gold Bakiyeniz: {new_gold}\n"
+                                        f"💰 Yeni Coin Bakiyeniz: {new_coins}"
+                                    )
+                                    await self.highrise.send_message(conversation_id, success_msg)
+
+                                    # Satın alımdan sonra otomatik çıkış
+                                    self.user_shop_state.pop(user_id, None)
+                                    await self.highrise.send_message(conversation_id, "🛒 Shop'tan otomatik olarak çıkıldı! Yeniden -shop yazarak menüye erişebilirsiniz.")
+                                    return
+
+                                elif message == "0":
+                                    # Ana menüye dön
+                                    from wallet_manager import get_gold
+                                    from points_manager import get_user_points
+
+                                    gold_balance = get_gold(username)
+                                    coin_balance = get_user_points(username)
+
+                                    shop_menu = (
+                                        f"🏪 SHOP MENÜSÜ 🏪\n\n"
+                                        f"💰 Coin Bakiyeniz: {coin_balance}\n"
+                                        f"💎 Gold Bakiyeniz: {gold_balance}\n\n"
+                                        f"1️⃣ Coin Menüsü\n"
+                                        f"2️⃣ VIP Menüsü ✨\n"
+                                        f"3️⃣ Yakında...\n"
+                                        f"4️⃣ Yakında...\n\n"
+                                        f"Seçim yapmak için sayı yazın (1-4)"
+                                    )
+
+                                    await self.highrise.send_message(conversation_id, shop_menu)
+                                    if user_id in self.user_shop_state:
+                                        self.user_shop_state[user_id]['menu'] = 'main'
+                                    return
+
+                                elif message.lower() in ["❌", "exit", "çıkış"]:
+                                    self.user_shop_state.pop(user_id, None)
+                                    await self.highrise.send_message(conversation_id, "👋 Shop'tan çıkıldı!")
+                                    return
+
+                            elif shop_state.get('menu') == 'vip':
+                                # VIP menüsünden seçim
+                                vip_packages = {
+                                    "1": {"level": 1, "gold": 200, "days": 30},
+                                    "2": {"level": 2, "gold": 350, "days": 30},
+                                    "3": {"level": 3, "gold": 500, "days": 30}
+                                }
+
+                                if message in vip_packages:
+                                    package = vip_packages[message]
+                                    vip_level = package["level"]
+                                    gold_cost = package["gold"]
+                                    vip_days = package["days"]
+
+                                    # Mevcut VIP kontrolü
+                                    from temp_vip_manager import get_temp_vip_info, add_temp_vip
+                                    existing_vip = get_temp_vip_info(username)
+
+                                    if existing_vip:
+                                        await self.highrise.send_message(conversation_id, f"❌ Zaten aktif VIP'iniz var!\n\n⭐ Mevcut VIP Kademe: {existing_vip['level']}\n📅 Kalan Süre: {existing_vip['days_left']} gün\n🗓️ Bitiş Tarihi: {existing_vip['expiry_date']}\n\nMevcut VIP'iniz bittikten sonra yeni VIP alabilirsiniz.")
+                                        return
+
+                                    from wallet_manager import get_gold, use_gold, add_gold
+
+                                    # Atomik gold düşürme
+                                    if not use_gold(username, gold_cost):
+                                        current_gold = get_gold(username)
+                                        await self.highrise.send_message(conversation_id, f"❌ Yetersiz Gold! Gerekli: {gold_cost} Gold, Mevcut: {current_gold} Gold")
+                                        return
+
+                                    # VIP ekle
+                                    if not add_temp_vip(username, vip_level, vip_days):
+                                        # VIP eklenemedi → gold'u iade et
+                                        for _ in range(3):
+                                            if add_gold(username, gold_cost):
+                                                break
+                                        await self.highrise.send_message(conversation_id, "❌ VIP ekleme sırasında hata oluştu! Gold iadesi yapıldı.")
+                                        return
+
+                                    new_gold = get_gold(username)
+                                    temp_vip_info = get_temp_vip_info(username)
+                                    vip_status = f"Kademe {temp_vip_info['level']} ({temp_vip_info['days_left']} gün kaldı)" if temp_vip_info else "Yok"
+
+                                    success_msg = (
+                                        f"✅ Satın alma başarılı!\n\n"
+                                        f"✨ VIP Kademe {vip_level} alındı ({vip_days} gün)\n"
+                                        f"💎 {gold_cost} Gold ödendi\n\n"
+                                        f"💎 Yeni Gold Bakiyeniz: {new_gold}\n"
+                                        f"🌟 VIP Statünüz: {vip_status}"
+                                    )
+                                    await self.highrise.send_message(conversation_id, success_msg)
+
+                                    # Satın alımdan sonra otomatik çıkış
+                                    self.user_shop_state.pop(user_id, None)
+                                    await self.highrise.send_message(conversation_id, "🛒 Shop'tan otomatik olarak çıkıldı! Yeniden -shop yazarak menüye erişebilirsiniz.")
+                                    return
+
+                                elif message == "0":
+                                    # Ana menüye dön
+                                    from wallet_manager import get_gold
+                                    from points_manager import get_user_points
+
+                                    gold_balance = get_gold(username)
+                                    coin_balance = get_user_points(username)
+
+                                    shop_menu = (
+                                        f"🏪 SHOP MENÜSÜ 🏪\n\n"
+                                        f"💰 Coin Bakiyeniz: {coin_balance}\n"
+                                        f"💎 Gold Bakiyeniz: {gold_balance}\n\n"
+                                        f"1️⃣ Coin Menüsü\n"
+                                        f"2️⃣ VIP Menüsü ✨\n"
+                                        f"3️⃣ Yakında...\n"
+                                        f"4️⃣ Yakında...\n\n"
+                                        f"Seçim yapmak için sayı yazın (1-4)"
+                                    )
+
+                                    await self.highrise.send_message(conversation_id, shop_menu)
+                                    if user_id in self.user_shop_state:
+                                        self.user_shop_state[user_id]['menu'] = 'main'
+                                    return
+
+                                elif message.lower() in ["❌", "exit", "çıkış"]:
+                                    self.user_shop_state.pop(user_id, None)
+                                    await self.highrise.send_message(conversation_id, "👋 Shop'tan çıkıldı!")
+                                    return
+
+                            # Geçersiz seçim
+                            await self.highrise.send_message(conversation_id, "❌ Geçersiz seçim! Lütfen menüdeki sayıları kullanın.")
+                            return
+                        finally:
+                            # processing flag'ini temizle (state hala mevcutsa)
+                            if user_id in self.user_shop_state:
+                                self.user_shop_state[user_id]['processing'] = False
 
                 # Shop dışındaki normal komutlar
                 if message == "-shop":
